@@ -3,3 +3,7 @@ p
     text-align: justify;
 }
 
+a
+{
+    cursor: pointer;
+}

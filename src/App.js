@@ -394,8 +394,8 @@ function FAQ(props) {
             <Panel header="Czy starsze dzieci nie stracą mając zajęcia razem z młodszymi?" eventKey="7">
 <p>
     Chcemy, aby rozwój dzieci prowadzony był bardzo indywidualnie. Aby możliwe było wsparcie nauczyciela dla każdego ucznia w wystarczającym stopniu
-    zajęcia dydaktyczne prowadzić będziemy w niewielkich grupach (max. 14 osób). Sprzyja temu też zawsze obecny drugi opiekun – wolontariusz anglojęzycznym lub rodzic.
-    Tworzymy 2 grupy wiekowe, jednak rzeczywisty podział w trakcie różnych zajęć będzie dostosowany do miejętności i zainteresowań dzieci.
+    zajęcia dydaktyczne prowadzić będziemy w niewielkich grupach (max. 14 osób). Sprzyja temu też zawsze obecny drugi opiekun – wolontariusz anglojęzyczny, lub rodzic.
+    Tworzymy 2 grupy wiekowe, jednak rzeczywisty podział w trakcie różnych zajęć będzie dostosowany do umiejętności i zainteresowań dzieci.
     Jednocześnie starsze (lub biegłe w jakimś temacie) dzieci mogą stać się nauczycielami młodszych, co, jak dowodzą badania poświęcone procesom nauczania, sprzyja zarówno jednym jak i drugim.
 </p>
             </Panel>
