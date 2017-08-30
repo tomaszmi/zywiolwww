@@ -55,16 +55,18 @@ function Zapisy(props) {
 Obecnie prowadzimy nabór do klas 0-5
 </p>
 <p>
-Przyjmujemy zapisy na zajęcia całodniowe oraz popołudniowe (poszkolne).
+Przyjmujemy także zapisy na zajęcia całodniowe oraz popołudniowe (poszkolne) - <a href="/docs/zywiol-zajecia_popoludniowe.pdf">zobacz załącznik</a>.
 </p>
 <p>
-Dzieci uczące się w Żywiole w formie całodniowej formalnie wypełniają obowiązek szkolny poza szkołą. Oznacza to, że zapisane są do zaprzyjaźnionej z nami szkoły macierzystej, która wydaje świadectwa i przeprowadza coroczny egzamin z wypełniania podstawy programowej MEN. Oferujemy pomoc z wszelkimi formalnościami.
+Dzieci uczące się w Żywiole w formie całodniowej uczą się w ramach realizacji obowiązku szkolnego poza szkołą zgodnie z art. 16 ust. 8 Ustawy o Systemie Oświaty.
+Oznacza to, że zapisane są do zaprzyjaźnionej z nami szkoły macierzystej, która wydaje świadectwa i przeprowadza coroczny egzamin z wypełniania podstawy programowej MEN.
+Oferujemy pomoc z wszelkimi formalnościami.
 </p>
 <p>
 Dzieci dochodzące do nas popołudniami dołączają po czasie spędzonym w swojej szkole. Wówczas dodatkowe formalności nie są konieczne.
 </p>
 <p>
-Pierwszym krokiem w rekrutacji jest kontakt. Napisz na adres: <a href="mailto:kontakt@zywiol.edu.pl">kontakt@zywiol.edu.pl</a>, pozostaw kontakt, w tym nr telefonu, a my zadzwonimy, umówimy się na spotkanie, w czasie którego porozmawiamy o wzajemnych oczekiwaniach i pomożemy przeprowadzić was przez proces rekrutacji.
+Pierwszym krokiem w rekrutacji jest kontakt. Napisz na adres: <a href="mailto:kontakt@zywiol.edu.pl">kontakt@zywiol.edu.pl</a>, pozostaw kontakt, w tym nr telefonu, a my zadzwonimy, umówimy się na spotkanie, w czasie którego porozmawiamy o wzajemnych oczekiwaniach i pomożemy przeprowadzić Was przez proces rekrutacji.
 </p>
         </div>
     );
@@ -79,23 +81,38 @@ function Cennik(props) {
             <Table striped condensed hover>
                 <tbody>
                     <tr>
-                        <td>700zł</td>
-                        <td>podstawowe czesne dla dzieci całodziennych</td>
+                        <td>700 zł</td>
+                        <td>Podstawowe czesne dla dzieci całodziennych</td>
                     </tr>
                     <tr>
-                        <td>500zł</td>
-                        <td>obniżone czesne dla dzieci całodziennych (skontaktuj się z nami, powiemy więcej)</td>
+                        <td>500 zł</td>
+                        <td>Obniżone czesne dla dzieci całodziennych (skontaktuj się z nami, powiemy więcej)</td>
                     </tr>
                     <tr>
-                        <td>500zł</td>
-                        <td>podstawowe czesne dla dzieci uczęszczające na zajęcia popołudniowe (po godzinie 13)</td>
+                        <td>500 zł</td>
+                        <td>Podstawowe czesne dla dzieci uczęszczających na zajęcia popołudniowe (po godzinie 13)</td>
                     </tr>
                     <tr>
-                        <td>500zł</td>
-                        <td>jednorazowe wpisowe</td>
+                        <td>400 zł</td>
+                        <td>Promocyjne czesne dla dzieci uczęszczających na zajęcia popołudniowe <b>we wrześniu</b></td>
+                    </tr>
+                    <tr>
+                        <td>500 zł / 400 zł</td>
+                        <td>Jednorazowe wpisowe (dzieci dzienne / zajęcia popołudniowe)</td>
+                    </tr>
+                    <tr>
+                        <td>80 zł</td>
+                        <td>Abonament na pojedyncze zajęcia (czyli jeden warsztat co tydzień)</td>
+                    </tr>
+                    <tr>
+                        <td>25 zł</td>
+                        <td>Udział w pojedynczych zajęciach popołudniowych</td>
                     </tr>
                 </tbody>
             </Table>
+            <p>
+                <a href="/docs/zywiol-zajecia_popoludniowe.pdf">Zobacz opis zajęć popołudniowych.</a>
+            </p>
         </div>
     );
 }
@@ -109,6 +126,23 @@ function HelpUs(props) {
             <p>
 Szkoła Autorska Żywioł nie jest punktem usługowym, ale miejscem budującym społeczność. Dlatego też zachęcamy rodziców do zaangażowania się w tworzenie tej inicjatywy. Niektórzy, posiadający dobry kontakt z dziećmi i indywidualne talenty, zapraszani są do prowadzenia warsztatów, inni do pomocy w organizacji wycieczek czy codziennego wsparcia szkoły w inny sposób. Ci, którym czas na to nie pozwala, zapraszani są do stałego kontaktu, tak żeby dziecko mogło rozwijać się swobodnie i harmonijnie. Raz na jakiś czas organizujemy dla rodziców wykłady i szkolenia, w trakcie których mogą się oni dowiedzieć co robić, aby wspierać szeroko rozumiany rozwój dziecka.
             </p>
+        </div>
+    );
+}
+
+//-------------------------------------------------------------------------------
+
+function Downloads(props) {
+    return (
+        <div>
+            <h3>Pliki do pobrania</h3>
+            <ul>
+                <li><p><a href="/docs/zywiol-zajecia_popoludniowe.pdf">Opis zajęć popołudniowych</a></p></li>
+                <li><p><a href="/docs/zywiol-informacje_o_dziecku.pdf">Informacje o dziecku</a></p></li>
+                <li><p><a href="/docs/zywiol-regulamin.pdf">Regulamin Autorskiej Szkoły <b>Żywioł</b></a></p></li>
+                <li><p><a href="/docs/fundacja_drzewo-status.pdf">Status Fundacji <b>Drzewo</b></a></p></li>
+                <li><p><a href="/docs/fundacja_drzewo-KRS.pdf">Fundacja <b>Drzewo</b> - KRS, wyciąg z sądu</a></p></li>
+            </ul>
         </div>
     );
 }
@@ -132,7 +166,7 @@ Pierwsze półtorej godziny to czas na swobodną integrację, gdzie w swobodnej 
 Do 13 prowadzimy zajęcia wynikające z podstawy programowej, a więc zajmujemy się przyrodą, matematyką, językiem, językami obcymi. Oczywiście, jak wszędzie, wykorzystujemy tu aktywne metody nauczania, w tym metodę projektową, czy metody Montessori w młodszych klasach.
 </p>
 <p>
-Po obiedzie, a więc od 14 do 17, prowadzimy zajęcia warsztatowe. W tej części chodzi o wyszukiwanie talentów dzieci i wykorzystywanie talentów otaczających nas ludzi. Zapraszamy różnorodnych warsztatowców, mających znakomity kontakt z dziećmi i pasję, którą potrafią się dzielić.
+Po obiedzie, a więc od 14 do 17, prowadzimy zajęcia warsztatowe. W tej części chodzi o wyszukiwanie talentów dzieci i wykorzystywanie talentów otaczających nas ludzi. Zapraszamy różnorodnych warsztatowców, mających znakomity kontakt z dziećmi i pasję, którą potrafią się dzielić. <a href="/docs/zywiol-zajecia_popoludniowe.pdf">Zobacz opis zajęć popołudniowych</a>.
 </p>
 <p>
 Raz w tygodniu wyjeżdżamy lub wychodzimy poza szkołę – jedziemy na rowerową wyprawę do lasu, odwiedzamy ciekawe miejsca w okolicy, wizytujemy Narodowe Forum Muzyki, Teatr Lalek, Humanitarium czy Ogród Botaniczny we Wrocławiu i realizujemy wiele innych pomysłów, które można zrealizować w najbliższej okolicy.
@@ -163,7 +197,10 @@ function Miejsce(props) {
     return (
         <div>
             <h3>Miejsce</h3>
-            <a href="https://www.google.pl/maps/place/%C5%BBywio%C5%82/@51.2971011,16.9254947,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x470f927834420d91:0x2ffa71c9b58b57ef!2s55-120+Oborniki+%C5%9Al%C4%85skie!3b1!8m2!3d51.3009866!4d16.9148091!3m4!1s0x470f9280fe9796bd:0x2b1ac88528785113!8m2!3d51.2971011!4d16.9260419">Tymczasowa lokalizacja</a>
+            <p>
+                <a href="https://www.google.pl/maps/place/%C5%BBywio%C5%82/@51.2971011,16.9254947,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x470f927834420d91:0x2ffa71c9b58b57ef!2s55-120+Oborniki+%C5%9Al%C4%85skie!3b1!8m2!3d51.3009866!4d16.9148091!3m4!1s0x470f9280fe9796bd:0x2b1ac88528785113!8m2!3d51.2971011!4d16.9260419">Ul. Wita Stwosza 6, Oborniki Śląskie</a><br/>
+                I piętro, w tym samym budynku co Papugarnia
+            </p>
         </div>
     );
 }
@@ -466,6 +503,7 @@ const mainMenu = (
             <MenuItem eventKey="rodzice.zapisy">Zapisy</MenuItem>
             <MenuItem eventKey="rodzice.cennik">Cennik</MenuItem>
             <MenuItem eventKey="rodzice.angaz">Zaangażuj się</MenuItem>
+            <MenuItem eventKey="rodzice.pliki">Pliki do pobrania</MenuItem>
             <MenuItem divider/>
             <MenuItem eventKey="rodzice.faq">FAQ</MenuItem>
           </NavDropdown>
@@ -493,6 +531,9 @@ const mainMenu = (
           </Tab.Pane>
           <Tab.Pane eventKey="rodzice.angaz">
             <br/><HelpUs/>
+          </Tab.Pane>
+          <Tab.Pane eventKey="rodzice.pliki">
+            <br/><Downloads/>
           </Tab.Pane>
           <Tab.Pane eventKey="rodzice.faq">
             <br/><FAQ/>
