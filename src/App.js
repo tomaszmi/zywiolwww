@@ -140,7 +140,7 @@ function Downloads(props) {
                 <li><p><a href="/docs/zywiol-zajecia_popoludniowe.pdf">Opis zajęć popołudniowych</a></p></li>
                 <li><p><a href="/docs/zywiol-informacje_o_dziecku.pdf">Informacje o dziecku</a></p></li>
                 <li><p><a href="/docs/zywiol-regulamin.pdf">Regulamin Autorskiej Szkoły <b>Żywioł</b></a></p></li>
-                <li><p><a href="/docs/fundacja_drzewo-status.pdf">Status Fundacji <b>Drzewo</b></a></p></li>
+                <li><p><a href="/docs/fundacja_drzewo-statut.pdf">Statut Fundacji <b>Drzewo</b></a></p></li>
                 <li><p><a href="/docs/fundacja_drzewo-KRS.pdf">Fundacja <b>Drzewo</b> - KRS, wyciąg z sądu</a></p></li>
             </ul>
         </div>
@@ -337,6 +337,9 @@ Dbamy o to aby posiłki spożywane w szkole były pełnowartościowe, sezonowe, 
 </p>
 <p>
 Zapewniamy możliwość wykupienia obiadów, oraz czas na spożycie śniadań i podwieczorków przyniesionych z domu.
+</p>
+<p>
+W dni, które sami nie będziemy gotować, odwiedzać będziemy słynną <a href="https://pl-pl.facebook.com/DeguStacjaObornikiSlaskie/">Degustację</a>, gdzie czekać będzie specjalnie przygotowane dla nas danie. 
 </p>
 <p>
 Kuchnię uważamy za fascynujące laboratorium, a czas posiłków jest idealny na nowe doznania, naukę i rozwój socjalny. Dlatego z radością chcemy zaoferować dzieciom warsztaty kulinarne.
@@ -574,7 +577,7 @@ class App extends Component {
         <br/>
         <Grid>
           <Row>
-            <Col sm={6} md={3}><Image src="/img/zywiol_logo.png" responsive/></Col>
+            <Col sm={6} md={3}><Image src="/img/zywiol_logo_nowe.png" responsive/></Col>
             <Col md={3} xsOffset={4}><SocialProfiles/></Col>
           </Row>
           <Row>
