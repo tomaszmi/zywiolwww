@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Tab, Image, Row, Col, Grid, Nav, NavItem, NavDropdown, MenuItem, Panel, Accordion, Well, Table, Media  } from 'react-bootstrap';
+import { Tab, Image, Row, Col, Grid, Nav, NavItem, NavDropdown, MenuItem, Panel, Accordion, Well, Table, Media} from 'react-bootstrap';
+import ReactTooltip from 'react-tooltip'
 import { SocialIcon } from 'react-social-icons';
+//import ReactSVG from 'react-svg'
 
 //-------------------------------------------------------------------------------
 
@@ -22,23 +24,98 @@ function Start(props) {
             <p>To autorska szkoła społeczna, w której dzieci edukują się zgodnie ze swoimi naturalnymi potrzebami, odkrywając swój własny żywioł.</p>
             <br/>
             <br/>
-            <h4><b>Nasze wartości</b></h4>
-            <p>
-                <Well><b>SZACUNEK</b>: chcemy, aby dzieci traktowane były podmiotowo, a relacje pomiędzy dorosłymi a dziećmi były partnerskie i oparte na zaufaniu, a nie hierarchii</Well>
-                <Well>Chcemy pracować nad tym, aby <b>POROZUMIENIE BEZ PRZEMOCY</b> stało się naszym językiem codziennym</Well>
-                <Well><b>HARMONIJNY rozwój dziecka</b>: chcemy, aby dotyczył on nie tylko intelektu, ale też emocji i relacji społecznych</Well>
-                <Well><b>WSPÓŁPRACA</b> zamiast rywalizacji</Well>
-                <Well>Bazowanie na <b>MOTYWACJI WEWNĘTRZNEJ</b> (chęci poznania, chęci realizacji swoich potrzeb), a nie zewnętrznej (ocen, kar i nagród)</Well>
-                <Well>Szkoła <b>SPOŁECZNA</b>, chcemy aby było to miejsce dzieci, rodziców i nauczycieli</Well>
-                <Well><b>ODPOWIEDZIALNOŚĆ</b>: chcemy wspierać dzieci w drodze do coraz większej samodzielności i odpowiedzialności</Well>
-                <Well><b>TOLERANCJA i OTWARTOŚĆ</b> wobec innych: wierzymy, że świat otwartych i tolerancyjnych dzieci byłby światem bez wojen</Well>
-                <Well>Kontakt z <b>NATURĄ</b>: chcemy, aby było go tak dużo, jak tylko się da. Inspirujemy się szkołami i przedszkolami leśnymi</Well>
-                <Well><b>RUCH FIZYCZNY</b>: chcemy, aby był narzędziem na niemal każdych zajęciach</Well>
-                <Well><b>ZDROWE</b> odżywianie: wartościowe, sezonowe, lokalne i smaczne!</Well>
-                <Well>Chcemy, aby edukacja była wspaniałą <b>PRZYGODĄ</b></Well>
-            </p>
-            <br/>
-            <br/>
+            <h4><b data-tip="hello world">Nasze wartości</b></h4>
+            <svg version="1.1"
+                baseProfile="full"
+                width="100%" height="100%"
+                viewBox="0, 0, 1000, 360"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <g data-tip="Chcemy uczyć dążenia do celu poprzez współpracę, a nie rywalizację">
+                    <circle cx={140} cy={90} r={80} fill="#2873B9" opacity="0.7"/>
+                    <text x="100" y="80" text-anchor="middle" fill="white">współpraca
+                        <tspan x="110" y="100" text-anchor="middle" fill="white">zamiast</tspan>
+                        <tspan x="100" y="120" text-anchor="middle" fill="white">rywalizacji</tspan>
+                    </text>
+                </g>
+                <g data-tip="Bazujemy na motywacji wewnętrznej (chęci poznania, chęci realizacji swoich potrzeb), a nie zewnętrznej (ocen, kar i nagród)">
+                    <circle cx={220} cy={210} r={70} fill="#FBBB25" opacity="0.7"/>
+                    <text x="180" y="200" text-anchor="middle" fill="white">motywacja
+                        <tspan x="180" y="220" text-anchor="middle" fill="white">wewnętrzna</tspan>
+                    </text>
+                </g>
+                <g data-tip="Chcemy, aby było go tak dużo, jak tylko się da. Inspirujemy się szkołami i przedszkolami leśnymi">
+                    <circle cx={300} cy={120} r={60} fill="#9EC428" opacity="0.7"/>
+                    <text x="275" y="110" text-anchor="middle" fill="white">kontakt
+                        <tspan x="275" y="130" text-anchor="middle" fill="white">z naturą</tspan>
+                    </text>
+                </g>
+                <g data-tip="Zajecia projektowe">
+                    <circle cx={300} cy={290} r={50} fill="#EE7B8D" opacity="0.7"/>
+                    <text x="280" y="280" text-anchor="middle" fill="white">zajęcia 
+                        <tspan x="260" y="300" text-anchor="middle" fill="white">projektowe</tspan>
+                    </text>
+                </g>
+                <g data-tip="Chcemy, aby ruch fizyczny był narzędziem na niemal każdych zajęciach">
+                    <circle cx={380} cy={240} r={50} fill="#56C0D3" opacity="0.7"/>
+                    <text x="360" y="230" text-anchor="middle" fill="white">dużo
+                        <tspan x="360" y="250" text-anchor="middle" fill="white">ruchu</tspan>
+                    </text>
+                </g>
+                <g data-tip="Chcemy pracować nad tym, aby porozumienie bez przemocy stało się naszym językiem codziennym">
+                    <circle cx={420} cy={100} r={70} fill="#FBBB25" opacity="0.7"/>
+                    <text x="380" y="90" text-anchor="middle" fill="white">Porozumienie
+                        <tspan x="380" y="110" text-anchor="middle" fill="white">bez przemocy</tspan>
+                        <tspan x="400" y="130" text-anchor="middle" fill="white">(NVC)</tspan>
+                    </text>
+                </g>
+                <g data-tip="Brak prac domowych">
+                    <circle cx={520} cy={170} r={60} fill="#2873B9" opacity="0.7"/>
+                    <text x="490" y="160" text-anchor="middle" fill="white">brak prac
+                        <tspan x="490" y="180" text-anchor="middle" fill="white">domowych</tspan>
+                    </text>
+                </g>
+                <g data-tip="Brak testów i klasówek">
+                    <circle cx={540} cy={280} r={60} fill="#9EC428" opacity="0.7"/>
+                    <text x="500" y="270" text-anchor="middle" fill="white">brak testów
+                        <tspan x="505" y="290" text-anchor="middle" fill="white">i klasówek</tspan>
+                    </text>
+                </g>
+                <g data-tip="Chcemy, aby dzieci traktowane były podmiotowo, a relacje pomiędzy dorosłymi a dziećmi były partnerskie i oparte na zaufaniu, a nie hierarchii">
+                    <circle cx={580} cy={90} r={50} fill="#C069A6" opacity="0.7"/>
+                    <text x="550" y="95" text-anchor="middle" fill="white">Szacunek</text>
+                </g>
+                <g data-tip="Chcemy, aby rozwój dotyczył nie tylko intelektu, ale też emocji i relacji społecznych">
+                    <circle cx={670} cy={160} r={70} fill="#56C0D3" opacity="0.7"/>
+                     <text x="630" y="140" text-anchor="middle" fill="white">harmonijny
+                        <tspan x="645" y="160" text-anchor="middle" fill="white">rozwój</tspan>
+                        <tspan x="640" y="180" text-anchor="middle" fill="white">dziecka</tspan>
+                    </text>
+                </g>
+                <g data-tip="Chcemy, aby było to miejsce dzieci, rodziców i nauczycieli">
+                    <circle cx={770} cy={90} r={60} fill="#FBBB25" opacity="0.7"/>
+                    <text x="745" y="80" text-anchor="middle" fill="white">szkoła
+                        <tspan x="735" y="100" text-anchor="middle" fill="white">społeczna</tspan>
+                    </text>
+                </g>
+                <g data-tip="Wierzymy, że świat otwartych i tolerancyjnych dzieci byłby światem bez wojen">
+                    <circle cx={790} cy={200} r={60} fill="#9EC428" opacity="0.7"/>
+                    <text x="755" y="190" text-anchor="middle" fill="white">tolerancja
+                        <tspan x="755" y="210" text-anchor="middle" fill="white">i otwartość</tspan>
+                    </text>
+                </g>
+                <g data-tip="Chcemy, aby edukacja była wspaniałą przygodą">
+                    <circle cx={860} cy={270} r={50} fill="#2873B9" opacity="0.7"/>
+                    <text x="830" y="270" text-anchor="middle" fill="white">przygoda</text>
+                </g>
+                <g data-tip="Wartościowe, sezonowe, lokalne i smaczne">
+                    <circle cx={870} cy={60} r={50} fill="#EE7B8D" opacity="0.7"/>
+                    <text x="845" y="50" text-anchor="middle" fill="white">Zdrowe
+                        <tspan x="835" y="70" text-anchor="middle" fill="white">odżywianie</tspan>
+                    </text>
+                </g>
+            </svg>
+            <ReactTooltip/>
             <p><i><b>Żywioł</b> to miejsce, w którym to, co kochamy robić spotyka się z tym, w czym jesteśmy dobrzy.</i></p>
             <p>Ken Robinson (“Uchwycić żywioł. O tym, jak znalezienie pasji zmienia wszystko”).</p>
         </div>
@@ -320,6 +397,13 @@ Starsza grupa prowadzona będzie przez <b>Borysa Bińkowskiego</b>, doktora geog
                     </p>
                 </Media.Body>
             </Media>
+            <Media>
+                <Media.Body>
+                    <p class="rowno">
+<b>Agata Kamińska</b>, która będzie u nas prowadzić zajęcia z Taekwondo, jest nie tylko specjalistą od sztuk walki, ale również od innych sztuk, w tym sztuki pracy z dziećmi. Jest świeżo upieczonym magistrem Arteterapii. Ukończyła studia pedagogiczne na kierunku Edukacja Wczesnoszkolna i Wychowanie Przedszkolne. Docenia sztukę tworzenia w każdym jej aspekcie, poczynając od twórczych zabaw w błocie, poprzez rysowanie muzyki, land art, na sztukach walki skończywszy. Jej największą pasją jest koreańska sztuka walki - Taekwondo. Współpracuje z Obornickim Klubem Taekwondo "Namu", gdzie oprócz poszerzania swojej własnej wiedzy, prowadzi zajęcia w grupie dzieci 3-6 lat. Swoje zamiłowanie do sportu przekłada na różne dziedziny. Na co dzień pracuje z dziećmi w wieku 3-4 lata w Przedszkolu Publicznym w Pęgowie.
+                    </p>
+                </Media.Body>
+            </Media>
             <br/>
         </div>
     );
@@ -577,7 +661,7 @@ class App extends Component {
         <br/>
         <Grid>
           <Row>
-            <Col sm={6} md={3}><Image src="/img/zywiol_logo_nowe.png" responsive/></Col>
+            <Col sm={6} md={3}><Image src="/img/zywiol_logo.png" responsive/></Col>
             <Col md={3} xsOffset={4}><SocialProfiles/></Col>
           </Row>
           <Row>
