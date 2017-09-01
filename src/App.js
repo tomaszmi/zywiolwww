@@ -434,6 +434,26 @@ Kuchnię uważamy za fascynujące laboratorium, a czas posiłków jest idealny n
 
 //-------------------------------------------------------------------------------
 
+function InspiracjeKsiazki(props) {
+    return (
+        <div>
+                <h3>Książki</h3>
+                <br/>
+        </div>
+    );
+}
+
+function InspiracjeLinki(props) {
+    return (
+        <div>
+                <h3>Linki</h3>
+                <br/>
+        </div>
+    );
+}
+
+//-------------------------------------------------------------------------------
+
 function Kontakt(props) {
     return (
         <div>
@@ -602,6 +622,10 @@ const mainMenu = (
             <MenuItem eventKey="szkola.zespol">Nasz zespół</MenuItem>
             <MenuItem eventKey="szkola.wyzywienie">Wyżywienie</MenuItem>
           </NavDropdown>
+          <NavDropdown eventKey="inspiracje" title="Inspiracje">
+            <MenuItem eventKey="inspiracje.ksiazki">Ksiazki</MenuItem>
+            <MenuItem eventKey="inspiracje.linki">Linki</MenuItem>
+          </NavDropdown>
           <NavItem eventKey="kontakt">Kontakt</NavItem>
         </Nav>
       </Col>
@@ -642,6 +666,12 @@ const mainMenu = (
           </Tab.Pane>
           <Tab.Pane eventKey="szkola.wyzywienie">
             <br/><Wyzywienie/>
+          </Tab.Pane>
+          <Tab.Pane eventKey="inspiracje.ksiazki">
+            <br/><InspiracjeKsiazki/>
+          </Tab.Pane>
+          <Tab.Pane eventKey="inspiracje.linki">
+            <br/><InspiracjeLinki/>
           </Tab.Pane>
           <Tab.Pane eventKey="kontakt">
             <br/><Kontakt/>
