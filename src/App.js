@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Tab, Image, Row, Col, Grid, Nav, NavItem, NavDropdown, MenuItem, Panel, Accordion, Well, Table, Media} from 'react-bootstrap';
+import { Tab, Image, Row, Col, Grid, Nav, NavItem, NavDropdown, MenuItem, Panel, Accordion, Well, Table, Media, Thumbnail} from 'react-bootstrap';
 import ReactTooltip from 'react-tooltip'
 import { SocialIcon } from 'react-social-icons';
 //import ReactSVG from 'react-svg'
@@ -24,7 +24,6 @@ function Start(props) {
             <p>To autorska szkoła społeczna, w której dzieci edukują się zgodnie ze swoimi naturalnymi potrzebami, odkrywając swój własny żywioł.</p>
             <br/>
             <br/>
-            <h4><b data-tip="hello world">Nasze wartości</b></h4>
             <svg version="1.1"
                 baseProfile="full"
                 width="100%" height="100%"
@@ -104,6 +103,14 @@ function Start(props) {
                         <tspan x="755" y="210" text-anchor="middle" fill="white">i otwartość</tspan>
                     </text>
                 </g>
+
+                <g data-tip="Indywidualne podejście">
+                    <circle cx={720} cy={290} r={60} fill="#C069A6" opacity="0.7"/>
+                    <text x="675" y="285" text-anchor="middle" fill="white">indywidualne
+                        <tspan x="685" y="305" text-anchor="middle" fill="white">podejście</tspan>
+                    </text>
+                </g>
+
                 <g data-tip="Chcemy, aby edukacja była wspaniałą przygodą">
                     <circle cx={860} cy={270} r={50} fill="#2873B9" opacity="0.7"/>
                     <text x="830" y="270" text-anchor="middle" fill="white">przygoda</text>
@@ -118,6 +125,16 @@ function Start(props) {
             <ReactTooltip/>
             <p><i><b>Żywioł</b> to miejsce, w którym to, co kochamy robić spotyka się z tym, w czym jesteśmy dobrzy.</i></p>
             <p>Ken Robinson (“Uchwycić żywioł. O tym, jak znalezienie pasji zmienia wszystko”).</p>
+        </div>
+    )
+}
+
+//-------------------------------------------------------------------------------
+
+function Warsztaty(props) {
+    return (
+        <div>
+            <h3><a href="https://warsztaty.zywiol.edu.pl/">Rejestracja on-line</a></h3>
         </div>
     )
 }
@@ -278,6 +295,20 @@ function Miejsce(props) {
                 <a href="https://www.google.pl/maps/place/%C5%BBywio%C5%82/@51.2971011,16.9254947,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x470f927834420d91:0x2ffa71c9b58b57ef!2s55-120+Oborniki+%C5%9Al%C4%85skie!3b1!8m2!3d51.3009866!4d16.9148091!3m4!1s0x470f9280fe9796bd:0x2b1ac88528785113!8m2!3d51.2971011!4d16.9260419">Ul. Wita Stwosza 6, Oborniki Śląskie</a><br/>
                 I piętro, w tym samym budynku co Papugarnia
             </p>
+            <p>
+Zajęcia będą odbywały się także regularnie poza budynkiem szkoły m.in. w <a href="https://minizoogaja.wordpress.com">MiniZoo</a> w <a href="https://www.google.pl/maps/place/Mini+Zoo+Gaja/@51.2582262,16.9277616,17z/data=!3m1!4b1!4m5!3m4!1s0x470f93ad42199607:0xf0f0b6cde5759ea1!8m2!3d51.2582229!4d16.9299504">Golędzinowie</a> oraz w okolicznych obornickich lasach.
+            </p>
+            <Grid>
+                <Row>
+                    <Col xs={6} md={3}>
+                        <Thumbnail href="https://minizoogaja.wordpress.com" alt="171x180" src="/img/zywiol-minizoo_gaja.jpg" />
+                    </Col>
+                    <Col xs={6} md={3}>
+                        <Thumbnail href="#" alt="171x180" src="/img/zywiol-w_lesie.jpg" />
+                    </Col>
+                </Row>
+            </Grid>
+            <p><br/><br/><br/></p>
         </div>
     );
 }
@@ -379,7 +410,7 @@ function Zespol(props) {
             <br/>
             <Media>
                 <Media.Left>
-                    <img width={256} height={256} src="/img/zywiol_Borys-Binkowski.jpg" alt="Borys Binkowski"/>
+                    <img width={256} height={256} src="/img/zywiol-Borys_Binkowski.jpg" alt="Borys Bińkowski"/>
                 </Media.Left>
                 <Media.Body>
                     <p>
@@ -389,11 +420,21 @@ Starsza grupa prowadzona będzie przez <b>Borysa Bińkowskiego</b>, doktora geog
             </Media>
             <Media>
                 <Media.Left>
-                    <img width={256} height={180} src="/img/zywiol_Ewelina-Mikolajczyk.jpg" alt="Ewelina Mikolajczyk"/>
+                    <img width={256} height={180} src="/img/zywiol-Ewelina_Mikolajczyk.jpg" alt="Ewelina Mikołajczyk"/>
                 </Media.Left>
                 <Media.Body>
                     <p class="rowno">
 <b>Ewelina Mikołajczyk</b> będzie opiekunką młodszej grupy. Ukończyła ochronę środowiska i biologię na Uniwersytecie Wrocławskim oraz podyplomowe studia pedagogiczne. Ma doświadczenie pracy zarówno z dziećmi jak i dorosłymi. Bliskie jej są pedagogika Montessorii oraz edukacja przygodowa. Płynie z nurtem porozumienia bez przemocy. Za priorytet uważa rozbudzanie ciekawości poznawczej i kreatywności dzieci. Prywatnie mama 2 chłopców i gromadki nietoperzy, fascynatka nauki, przyrody, miłośniczka gór, jaskiń i rowerów.
+                    </p>
+                </Media.Body>
+            </Media>
+            <Media>
+                <Media.Left>
+                    <img width={256} height={300} src="/img/zywiol-Magdalena_Sekalska.jpg" alt="Magdalena Sękalska"/>
+                </Media.Left>
+                <Media.Body>
+                    <p class="rowno">
+<b>Magdalena Sękalska</b> - ciepła i sympatyczna osoba. W Żywiole będzie wspomagać młodszą grupę. Absolwentka studiów na kierunku pedagogika specjalna na Uniwersytecie Wrocławskim. Wciąż poszerza swoją wiedzę. Obserwacja rozwoju dzieci jest jej pasją, a kontakt z najmłodszymi źródłem radości. Posiada spore doświadczenie w opiece nad dziećmi. Bliskie jest jej poznanie wielozmysłowe i sensoplastyka. Jako dyplomowana animatorka zabaw dla dzieci prowadzi m.in. kreatywny kącik dla dzieci. Jej zainteresowania sięgają od Klubu Miłośników Starej Motoryzacji, po górskie szczyty.
                     </p>
                 </Media.Body>
             </Media>
@@ -439,6 +480,20 @@ function InspiracjeKsiazki(props) {
         <div>
                 <h3>Książki</h3>
                 <br/>
+<p>
+    <ul>
+        <li><cite>"Uchwycić Żywioł. O tym, jak znalezienie pasji zmienia wszystko"</cite> <a href="http://sirkenrobinson.com">Ken Robinson</a> (ISBN: 978-83-929719-2-4)</li>
+        <li><cite>"Jak uczy się mózg"</cite> <a href="https://de.wikipedia.org/wiki/Manfred_Spitzer">Manfred Spitzner</a> (ISBN: 978-83-01-15261-1)</li>
+        <li><cite>"Neurodydaktyka. Nauczanie i uczenie się przyjazne mózgowi"</cite> <a href="http://www.budzacasieszkola.pl">Marzena Żylińska</a> (ISBN: 978-83-231-3092-5)</li>
+        <li><cite>"Dziecko z bliska idzie w świat"</cite> <a href="http://agnieszkastein.pl">Agnieszka Stein</a> (ISBN: 978-83-93-90190-6)</li>
+        <li><cite>"Porozumienie bez przemocy"</cite> <a href="https://www.cnvc.org/about/marshall-rosenberg.html">Marshall B. Rosenberg</a> (ISBN: 978-83-88875-44-1)</li>
+        <li><cite>"Kryzys szkoły"</cite> <a href="http://www.jesperjuul.com">Jesper Juul</a> (ISBN: 978-83-62445-50-9)</li>
+        <li><cite>"Ostatnie dziecko lasu"</cite> <a href="http://richardlouv.com">Richard Louv</a> (ISBN: 978-83-65-08759-1)</li>
+        <li><cite>"Kim jesteśmy, a kim moglibyśmy być"</cite> <a href="http://www.gerald-huether.de">Gerald Hüther</a> (ISBN: 978-83-64184-19-2)</li>
+        <li><cite>"Jak mówić, żeby dzieci nas słuchały. Jak słuchać, żeby dzieci do nas mówiły"</cite> <a href="http://www.fabermazlish.com">Faber Adele, Mazlish Elaine</a> (ISBN: 978-83-7278-501-5)</li>
+        <li><cite>"Odkrycie dziecka"</cite> <a href="https://pl.wikipedia.org/wiki/Maria_Montessori">Maria Montessori</a> (ISBN: 978-83-935122-9-4)</li>
+    </ul>
+</p>
         </div>
     );
 }
@@ -448,6 +503,13 @@ function InspiracjeLinki(props) {
         <div>
                 <h3>Linki</h3>
                 <br/>
+<p>
+    <ul>
+        <li><a href="http://innowacyjnaedukacja.blogspot.com">http://innowacyjnaedukacja.blogspot.com</a></li>
+        <li><a href="http://www.budzacasieszkola.pl">http://www.budzacasieszkola.pl</a></li>
+        <li><a href="http://dziecisawazne.pl">http://dziecisawazne.pl</a></li>
+    </ul>
+</p>
         </div>
     );
 }
@@ -606,6 +668,7 @@ const mainMenu = (
       <Col>
         <Nav bsStyle="tabs">
           <NavItem eventKey="start">Start</NavItem>
+          <NavItem title="Rejestracja on-line" eventKey="warsztaty">Warsztaty</NavItem>
           <NavDropdown eventKey="rodzice" title="Dla rodziców">
             <MenuItem eventKey="rodzice.zapisy">Zapisy</MenuItem>
             <MenuItem eventKey="rodzice.cennik">Cennik</MenuItem>
@@ -623,7 +686,7 @@ const mainMenu = (
             <MenuItem eventKey="szkola.wyzywienie">Wyżywienie</MenuItem>
           </NavDropdown>
           <NavDropdown eventKey="inspiracje" title="Inspiracje">
-            <MenuItem eventKey="inspiracje.ksiazki">Ksiazki</MenuItem>
+            <MenuItem eventKey="inspiracje.ksiazki">Książki</MenuItem>
             <MenuItem eventKey="inspiracje.linki">Linki</MenuItem>
           </NavDropdown>
           <NavItem eventKey="kontakt">Kontakt</NavItem>
@@ -633,6 +696,9 @@ const mainMenu = (
         <Tab.Content animation>
           <Tab.Pane eventKey="start">
             <br/><Start/>
+          </Tab.Pane>
+          <Tab.Pane eventKey="warsztaty">
+            <br/><Warsztaty/>
           </Tab.Pane>
           <Tab.Pane eventKey="rodzice.zapisy">
             <br/><Zapisy/>
