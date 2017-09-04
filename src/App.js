@@ -134,7 +134,10 @@ function Start(props) {
 function Warsztaty(props) {
     return (
         <div>
-            <h3><a href="https://warsztaty.zywiol.edu.pl/">Rejestracja on-line</a></h3>
+            <p>
+                <a href="/docs/zywiol-zajecia_popoludniowe.pdf">Opis zajęć popołudniowych</a>
+            </p>
+            <p><a href="https://warsztaty.zywiol.edu.pl/">Rejestracja on-line</a></p>
         </div>
     )
 }
@@ -668,7 +671,7 @@ const mainMenu = (
       <Col>
         <Nav bsStyle="tabs">
           <NavItem eventKey="start">Start</NavItem>
-          <NavItem title="Rejestracja on-line" eventKey="warsztaty">Warsztaty</NavItem>
+          <NavItem title="Rejestracja on-line" eventKey="warsztaty"><b>Warsztaty</b></NavItem>
           <NavDropdown eventKey="rodzice" title="Dla rodziców">
             <MenuItem eventKey="rodzice.zapisy">Zapisy</MenuItem>
             <MenuItem eventKey="rodzice.cennik">Cennik</MenuItem>
