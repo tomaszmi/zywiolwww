@@ -442,12 +442,17 @@ Starsza grupa prowadzona będzie przez <b>Borysa Bińkowskiego</b>, doktora geog
                 </Media.Body>
             </Media>
             <Media>
+                <Media.Left>
+                    <img width={256} height={300} src="/img/zywiol-Agata_Kaminska.jpg" alt="Agata Kamińska"/>
+                </Media.Left>
                 <Media.Body>
                     <p class="rowno">
 <b>Agata Kamińska</b>, która będzie u nas prowadzić zajęcia z Taekwondo, jest nie tylko specjalistą od sztuk walki, ale również od innych sztuk, w tym sztuki pracy z dziećmi. Jest świeżo upieczonym magistrem Arteterapii. Ukończyła studia pedagogiczne na kierunku Edukacja Wczesnoszkolna i Wychowanie Przedszkolne. Docenia sztukę tworzenia w każdym jej aspekcie, poczynając od twórczych zabaw w błocie, poprzez rysowanie muzyki, land art, na sztukach walki skończywszy. Jej największą pasją jest koreańska sztuka walki - Taekwondo. Współpracuje z Obornickim Klubem Taekwondo "Namu", gdzie oprócz poszerzania swojej własnej wiedzy, prowadzi zajęcia w grupie dzieci 3-6 lat. Swoje zamiłowanie do sportu przekłada na różne dziedziny. Na co dzień pracuje z dziećmi w wieku 3-4 lata w Przedszkolu Publicznym w Pęgowie.
                     </p>
                 </Media.Body>
             </Media>
+            <br/>
+            <br/>
             <br/>
         </div>
     );
