@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Tab, Image, Row, Col, Grid, Nav, NavItem, NavDropdown, MenuItem, Panel, Accordion, Well, Table, Media, Thumbnail} from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap'
 import ReactTooltip from 'react-tooltip'
 import { SocialIcon } from 'react-social-icons';
 //import ReactSVG from 'react-svg'
@@ -63,7 +64,7 @@ function Start(props) {
                 </g>
                 <g data-tip="Chcemy pracować nad tym, aby porozumienie bez przemocy stało się naszym językiem codziennym">
                     <circle cx={420} cy={100} r={70} fill="#FBBB25" opacity="0.7"/>
-                    <text x="380" y="90" text-anchor="middle" fill="white">Porozumienie
+                    <text x="380" y="90" text-anchor="middle" fill="white">porozumienie
                         <tspan x="380" y="110" text-anchor="middle" fill="white">bez przemocy</tspan>
                         <tspan x="400" y="130" text-anchor="middle" fill="white">(NVC)</tspan>
                     </text>
@@ -82,7 +83,7 @@ function Start(props) {
                 </g>
                 <g data-tip="Chcemy, aby dzieci traktowane były podmiotowo, a relacje pomiędzy dorosłymi a dziećmi były partnerskie i oparte na zaufaniu, a nie hierarchii">
                     <circle cx={580} cy={90} r={50} fill="#C069A6" opacity="0.7"/>
-                    <text x="550" y="95" text-anchor="middle" fill="white">Szacunek</text>
+                    <text x="550" y="95" text-anchor="middle" fill="white">szacunek</text>
                 </g>
                 <g data-tip="Chcemy, aby rozwój dotyczył nie tylko intelektu, ale też emocji i relacji społecznych">
                     <circle cx={670} cy={160} r={70} fill="#56C0D3" opacity="0.7"/>
@@ -117,7 +118,7 @@ function Start(props) {
                 </g>
                 <g data-tip="Wartościowe, sezonowe, lokalne i smaczne">
                     <circle cx={870} cy={60} r={50} fill="#EE7B8D" opacity="0.7"/>
-                    <text x="845" y="50" text-anchor="middle" fill="white">Zdrowe
+                    <text x="845" y="50" text-anchor="middle" fill="white">zdrowe
                         <tspan x="835" y="70" text-anchor="middle" fill="white">odżywianie</tspan>
                     </text>
                 </g>
@@ -535,7 +536,7 @@ tel: <a href="tel:+48 503 373 185">+48 503 373 185</a>
 </p>
 <p>
 Organ prowadzący:<br/> <b>Fundacja Drzewo</b><br/>
-ul. Kazimierza Jagielończyka 16<br/>
+ul. Kazimierza Jagiellończyka 16<br/>
 55-120 Oborniki Śląskie<br/>
 KRS: 0000689222<br/>
 NIP: 9151804439<br/>
