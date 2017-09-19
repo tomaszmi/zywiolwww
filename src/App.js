@@ -1,10 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Tab, Image, Row, Col, Grid, Nav, NavItem, NavDropdown, MenuItem, Panel, Accordion, Well, Table, Media, Thumbnail} from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap'
 import ReactTooltip from 'react-tooltip'
 import { SocialIcon } from 'react-social-icons';
 //import ReactSVG from 'react-svg'
+
+const LinkNames = [
+    "start",
+    "warsztaty",
+    "rodzice.zapisy",
+    "rodzice.cennik",
+    "rodzice.angaz",
+    "rodzice.pliki",
+    "rodzice.faq",
+    "szkola.dzien",
+    "szkola.aktualnosci",
+    "szkola.miejsce",
+    "szkola.metody",
+    "szkola.zespol",
+    "szkola.wyzywienie",
+    "inspiracje.ksiazki",
+    "inspiracje.linki",
+    "kontakt"
+];
 
 //-------------------------------------------------------------------------------
 
@@ -671,8 +689,29 @@ function FAQ(props) {
 
 //-------------------------------------------------------------------------------
 
-const mainMenu = (
-  <Tab.Container id="main_menu" defaultActiveKey="start">
+function getHash() {
+    var parser = document.createElement("a");
+    parser.href = window.location.href;
+    if(parser.hash.length !== 0 && parser.hash[0] === '#')
+    {
+        return parser.hash.substr(1);
+    }
+    return "";
+}
+
+function getActiveKey() {
+    const hash = getHash();
+    const key = LinkNames.find(knownHash => knownHash === hash);
+    if(key)
+    {
+        return key;
+    }
+    return LinkNames[0];
+}
+
+const mainMenu =
+  (
+  <Tab.Container id="main_menu" defaultActiveKey={getActiveKey()}>
     <Row className="clearfix">
       <Col>
         <Nav bsStyle="tabs">
