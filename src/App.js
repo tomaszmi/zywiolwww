@@ -153,9 +153,6 @@ function Start(props) {
 function Warsztaty(props) {
     return (
         <div>
-            <p>
-                <a href="/docs/zywiol-zajecia_popoludniowe.pdf">Opis zajęć popołudniowych</a>
-            </p>
             <p><a href="https://warsztaty.zywiol.edu.pl/">Rejestracja on-line</a></p>
         </div>
     )
@@ -171,7 +168,7 @@ function Zapisy(props) {
 Obecnie prowadzimy nabór do klas 0-5
 </p>
 <p>
-Przyjmujemy także zapisy na zajęcia całodniowe oraz popołudniowe (poszkolne) - <a href="/docs/zywiol-zajecia_popoludniowe.pdf">zobacz załącznik</a>.
+Przyjmujemy także zapisy na zajęcia całodniowe oraz popołudniowe (poszkolne).
 </p>
 <p>
 Dzieci uczące się w Żywiole w formie całodniowej uczą się w ramach realizacji obowiązku szkolnego poza szkołą zgodnie z art. 16 ust. 8 Ustawy o Systemie Oświaty.
@@ -226,9 +223,6 @@ function Cennik(props) {
                     </tr>
                 </tbody>
             </Table>
-            <p>
-                <a href="/docs/zywiol-zajecia_popoludniowe.pdf">Zobacz opis zajęć popołudniowych.</a>
-            </p>
         </div>
     );
 }
@@ -253,7 +247,6 @@ function Downloads(props) {
         <div>
             <h3>Pliki do pobrania</h3>
             <ul>
-                <li><p><a href="/docs/zywiol-zajecia_popoludniowe.pdf">Opis zajęć popołudniowych</a></p></li>
                 <li><p><a href="/docs/zywiol-informacje_o_dziecku.pdf">Informacje o dziecku</a></p></li>
                 <li><p><a href="/docs/zywiol-regulamin.pdf">Regulamin Autorskiej Szkoły <b>Żywioł</b></a></p></li>
                 <li><p><a href="/docs/fundacja_drzewo-statut.pdf">Statut Fundacji <b>Drzewo</b></a></p></li>
@@ -282,7 +275,7 @@ Pierwsze półtorej godziny to czas na swobodną integrację, gdzie w swobodnej 
 Do 13 prowadzimy zajęcia wynikające z podstawy programowej, a więc zajmujemy się przyrodą, matematyką, językiem, językami obcymi. Oczywiście, jak wszędzie, wykorzystujemy tu aktywne metody nauczania, w tym metodę projektową, czy metody Montessori w młodszych klasach.
 </p>
 <p>
-Po obiedzie, a więc od 14 do 17, prowadzimy zajęcia warsztatowe. W tej części chodzi o wyszukiwanie talentów dzieci i wykorzystywanie talentów otaczających nas ludzi. Zapraszamy różnorodnych warsztatowców, mających znakomity kontakt z dziećmi i pasję, którą potrafią się dzielić. <a href="/docs/zywiol-zajecia_popoludniowe.pdf">Zobacz opis zajęć popołudniowych</a>.
+Po obiedzie, a więc od 14 do 17, prowadzimy zajęcia warsztatowe. W tej części chodzi o wyszukiwanie talentów dzieci i wykorzystywanie talentów otaczających nas ludzi. Zapraszamy różnorodnych warsztatowców, mających znakomity kontakt z dziećmi i pasję, którą potrafią się dzielić.
 </p>
 <p>
 Raz w tygodniu wyjeżdżamy lub wychodzimy poza szkołę – jedziemy na rowerową wyprawę do lasu, odwiedzamy ciekawe miejsca w okolicy, wizytujemy Narodowe Forum Muzyki, Teatr Lalek, Humanitarium czy Ogród Botaniczny we Wrocławiu i realizujemy wiele innych pomysłów, które można zrealizować w najbliższej okolicy.
@@ -446,7 +439,7 @@ Starsza grupa prowadzona będzie przez <b>Borysa Bińkowskiego</b>, doktora geog
                 </Media.Left>
                 <Media.Body>
                     <p class="rowno">
-<b>Ewelina Mikołajczyk</b> będzie opiekunką młodszej grupy. Ukończyła ochronę środowiska i biologię na Uniwersytecie Wrocławskim oraz podyplomowe studia pedagogiczne. Ma doświadczenie pracy zarówno z dziećmi jak i dorosłymi. Bliskie jej są pedagogika Montessorii oraz edukacja przygodowa. Płynie z nurtem porozumienia bez przemocy. Za priorytet uważa rozbudzanie ciekawości poznawczej i kreatywności dzieci. Prywatnie mama 2 chłopców i gromadki nietoperzy, fascynatka nauki, przyrody, miłośniczka gór, jaskiń i rowerów.
+<b>Ewelina Mikołajczyk</b> będzie opiekunką młodszej grupy. Ukończyła ochronę środowiska i biologię na Uniwersytecie Wrocławskim oraz podyplomowe studia pedagogiczne. Ma doświadczenie w pracy zarówno z dziećmi jak i dorosłymi. Bliskie jej są pedagogika Montessorii oraz edukacja przygodowa. Płynie z nurtem porozumienia bez przemocy. Za priorytet uważa rozbudzanie ciekawości poznawczej i kreatywności dzieci. Prywatnie mama 2 chłopców i gromadki nietoperzy, fascynatka nauki, przyrody, miłośniczka gór, jaskiń i rowerów.
                     </p>
                 </Media.Body>
             </Media>
