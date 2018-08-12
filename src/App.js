@@ -153,7 +153,12 @@ function Start(props) {
 function Warsztaty(props) {
     return (
         <div>
-            <p><a href="https://warsztaty.zywiol.edu.pl/">Rejestracja on-line</a></p>
+            <p>
+                Szkoła Żywioł prowadzi także dodatkowe warsztaty dla dzieci korzystających ze szkół publicznych. Możesz zapisać swoje dziecko na pojedyncze warsztaty lub na ich cykl.
+            </p>
+            <h3>
+                <a href="https://warsztaty.zywiol.edu.pl/">Rejestracja on-line</a>
+            </h3>
         </div>
     )
 }
@@ -165,7 +170,7 @@ function Zapisy(props) {
         <div>
             <h3>Zapisy</h3>
 <p>
-Obecnie prowadzimy nabór do klas 0-5
+Obecnie prowadzimy nabór do klas 0-6 oraz do przedszkola.
 </p>
 <p>
 Przyjmujemy także zapisy na zajęcia całodniowe oraz popołudniowe (poszkolne).
@@ -194,32 +199,36 @@ function Cennik(props) {
             <Table striped condensed hover>
                 <tbody>
                     <tr>
-                        <td>700 zł</td>
-                        <td>Podstawowe czesne dla dzieci całodziennych</td>
+                        <td>700 zł/miesiąc</td>
+                        <td>Czesne dla dzieci szkolnych, klasy 0-8, uczęszczających w godzinach 7:00-17:00</td>
+                    </tr>
+                    <tr>
+                        <td>600 zł/miesiąc</td>
+                        <td>Czesne dla dzieci przedszkolnych uczęszczających w godzinach 7:00-17:00</td>
+                    </tr>
+                    <tr>
+                        <td>500 zł/miesiąc</td>
+                        <td>Czesne dla dzieci uczęszczających na zajęcia popołudniowe, tj. od godziny 13:00</td>
                     </tr>
                     <tr>
                         <td>500 zł</td>
-                        <td>Obniżone czesne dla dzieci całodziennych (skontaktuj się z nami, powiemy więcej)</td>
-                    </tr>
-                    <tr>
-                        <td>500 zł</td>
-                        <td>Podstawowe czesne dla dzieci uczęszczających na zajęcia popołudniowe (po godzinie 13)</td>
+                        <td>Jednorazowe wpisowe za dzieci uczestniczące w zajęciach dziennych</td>
                     </tr>
                     <tr>
                         <td>400 zł</td>
-                        <td>Promocyjne czesne dla dzieci uczęszczających na zajęcia popołudniowe <b>we wrześniu</b></td>
+                        <td>Jednorazowe wpisowe za dzieci uczestniczące w zajęciach popołudniowych</td>
                     </tr>
                     <tr>
-                        <td>500 zł / 400 zł</td>
-                        <td>Jednorazowe wpisowe (dzieci dzienne / zajęcia popołudniowe)</td>
-                    </tr>
-                    <tr>
-                        <td>80 zł</td>
-                        <td>Abonament na pojedyncze zajęcia (czyli jeden warsztat co tydzień)</td>
+                        <td>60 zł</td>
+                        <td>Usługa "Jeden dzień w szkole"</td>
                     </tr>
                     <tr>
                         <td>25 zł</td>
-                        <td>Udział w pojedynczych zajęciach popołudniowych</td>
+                        <td>Jednorazowy udział w zajęciach popołudniowych</td>
+                    </tr>
+                    <tr>
+                        <td>20 zł</td>
+                        <td>Udział w zajęciach popołudniowych - opłata w abonamencie</td>
                     </tr>
                 </tbody>
             </Table>
@@ -263,22 +272,22 @@ function PlanDnia(props) {
         <div>
             <h3>Plan dnia</h3>
 <p>
-<Image src="/img/zywiol_plan_dnia.jpg" rounded/>
+<Image src="/img/zywiol-plan_dnia.jpg" rounded/>
 </p>
 <p>
-Żywioł otwarty jest od 8 do 17.
+Żywioł otwarty jest od 7 do 17.
 </p>
 <p>
-Pierwsze półtorej godziny to czas na swobodną integrację, gdzie w swobodnej atmosferze powoli wchodzimy w dzień. Jest to też czas na spóźnienia, tak, żeby nie zaczynać dnia od niepotrzebnego pośpiechu, oraz na wymianę informacji pomiędzy rodzicami a nauczycielami.
+Pierwsze dwie godziny to czas na swobodną integrację, gdzie w swobodnej atmosferze powoli wchodzimy w dzień. Jest to też czas na spóźnienia, tak, żeby nie zaczynać dnia od niepotrzebnego pośpiechu, oraz na wymianę informacji pomiędzy rodzicami a nauczycielami.
 </p>
 <p>
-Do 13 prowadzimy zajęcia wynikające z podstawy programowej, a więc zajmujemy się przyrodą, matematyką, językiem, językami obcymi. Oczywiście, jak wszędzie, wykorzystujemy tu aktywne metody nauczania, w tym metodę projektową, czy metody Montessori w młodszych klasach.
+Do 13 prowadzimy zajęcia wynikające z podstawy programowej, a więc zajmujemy się przyrodą, matematyką, językiem polskim i językami obcymi. Oczywiście, jak wszędzie, wykorzystujemy tu aktywne metody nauczania, w tym metodę projektową, czy metody Montessori w młodszych klasach.
 </p>
 <p>
-Po obiedzie, a więc od 14 do 17, prowadzimy zajęcia warsztatowe. W tej części chodzi o wyszukiwanie talentów dzieci i wykorzystywanie talentów otaczających nas ludzi. Zapraszamy różnorodnych warsztatowców, mających znakomity kontakt z dziećmi i pasję, którą potrafią się dzielić.
+Po obiedzie, a więc od 13:30 do 17:00, prowadzimy zajęcia warsztatowe. Ta część ma na celu wyszukiwanie talentów dzieci i wykorzystywanie talentów otaczających nas ludzi. Zapraszamy różnorodnych warsztatowców mających znakomity kontakt z dziećmi i pasję, którą potrafią się dzielić.
 </p>
 <p>
-Raz w tygodniu wyjeżdżamy lub wychodzimy poza szkołę – jedziemy na rowerową wyprawę do lasu, odwiedzamy ciekawe miejsca w okolicy, wizytujemy Narodowe Forum Muzyki, Teatr Lalek, Humanitarium czy Ogród Botaniczny we Wrocławiu i realizujemy wiele innych pomysłów, które można zrealizować w najbliższej okolicy.
+Raz w tygodniu wyjeżdżamy lub wychodzimy poza szkołę – jedziemy na rowerową wyprawę do lasu, odwiedzamy ciekawe miejsca w okolicy, wizytujemy Narodowe Forum Muzyki, Teatr Lalek, Humanitarium czy Ogród Botaniczny we Wrocławiu i podejmujemy wiele innych pomysłów, które można zrealizować w najbliższej okolicy.
 </p>
         </div>
     );
@@ -291,10 +300,10 @@ function Aktualnosci(props) {
         <div>
             <h3>Aktualności</h3>
 <p>
-    <b><a href="http://nowagazeta.pl/2017/07/zywiol-szkola-bez-lawek/">Żywioł - szkoła bez ławek</a></b> - przeczytaj artykuł o naszej szkole opublikowany w gazecie Nowa.
+    Zapraszamy do zapoznania się z ubiegłymi i nadchodzącymi wydarzeniami na naszym profilu Facebook: <br/><a href="https://pl-pl.facebook.com/zywiol.obornikislaskie/">https://pl-pl.facebook.com/zywiol.obornikislaskie/</a>
 </p>
 <p>
-    Zapraszamy do zapoznania się z ubiegłymi i nadchodzącymi wydarzeniami na naszym profilu Facebook: <br/><a href="https://pl-pl.facebook.com/zywiol.obornikislaskie/">https://pl-pl.facebook.com/zywiol.obornikislaskie/</a>
+    <b><a href="http://nowagazeta.pl/2017/07/zywiol-szkola-bez-lawek/">Żywioł - szkoła bez ławek</a></b> - przeczytaj artykuł o naszej szkole opublikowany w gazecie Nowa.
 </p>
         </div>
     );
@@ -307,22 +316,14 @@ function Miejsce(props) {
         <div>
             <h3>Miejsce</h3>
             <p>
-                <a href="https://www.google.pl/maps/place/%C5%BBywio%C5%82/@51.2971011,16.9254947,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x470f927834420d91:0x2ffa71c9b58b57ef!2s55-120+Oborniki+%C5%9Al%C4%85skie!3b1!8m2!3d51.3009866!4d16.9148091!3m4!1s0x470f9280fe9796bd:0x2b1ac88528785113!8m2!3d51.2971011!4d16.9260419">Ul. Wita Stwosza 6, Oborniki Śląskie</a><br/>
-                I piętro, w tym samym budynku co Papugarnia
+                <a href="https://www.google.pl/maps/place/Autorska+Szko%C5%82a+%C5%BBywio%C5%82/@51.313472,16.8457176,13z/data=!4m5!3m4!1s0x0:0x43396cea56911c6!8m2!3d51.2769041!4d16.8981206">Golędzinów, Kolonia 39, 55-120 Oborniki Śląskie</a>
             </p>
             <p>
-Zajęcia będą odbywały się także regularnie poza budynkiem szkoły m.in. w <a href="https://minizoogaja.wordpress.com">MiniZoo</a> w <a href="https://www.google.pl/maps/place/Mini+Zoo+Gaja/@51.2582262,16.9277616,17z/data=!3m1!4b1!4m5!3m4!1s0x470f93ad42199607:0xf0f0b6cde5759ea1!8m2!3d51.2582229!4d16.9299504">Golędzinowie</a> oraz w okolicznych obornickich lasach.
+                Nasza szkoła znajduje się na odludziu 2 km od Obornik Śląskich w dawnym budynku jednorodzinnym w pobliżu miejscowości Nowosielce.
+                Budynek otoczony jest należącym do szkoły dużym ogrodem, gdzie dzieci spędzają większość wolnego czasu, szczególnie w ciepłe dni.
+                Znajduje się tam sad jabłkowy, niewielkie boisko, domek na drzewie. Ogród położony jest przy stawie na skraju pól i lasu,
+                a w pobliżu znajduje się jeden z największych borów sosonowych w pobliżu Wrocławia. Ze wszystkich tych przyrodniczych możliwości regularnie korzystamy.
             </p>
-            <Grid>
-                <Row>
-                    <Col xs={6} md={3}>
-                        <Thumbnail href="https://minizoogaja.wordpress.com" alt="171x180" src="/img/zywiol-minizoo_gaja.jpg" />
-                    </Col>
-                    <Col xs={6} md={3}>
-                        <Thumbnail href="#" alt="171x180" src="/img/zywiol-w_lesie.jpg" />
-                    </Col>
-                </Row>
-            </Grid>
             <p><br/><br/><br/></p>
         </div>
     );
@@ -429,7 +430,7 @@ function Zespol(props) {
                 </Media.Left>
                 <Media.Body>
                     <p>
-Starsza grupa prowadzona będzie przez <b>Borysa Bińkowskiego</b>, doktora geografii Uniwersytetu Wrocławskiego i absolwenta Międzywydziałowych Studiów Matematyczno-Przyrodniczych na Uniwersytecie Warszawskim. Od lat prowadzi zajęcia z różnych zagadnień (prahistoria, ekonomia, geografia świata, zajęcia z biegów na orientację, warsztaty gitarowe i wiele innych) dla różnych grup wiekowych – od 8 do 80 lat. Od 4 lat prowadzi również edukację domową dla dwóch swoich synów, aktywnie poznając nowoczesne i skuteczne metody edukacyjne. Pasjonuje się sportami związanymi z przyrodą – biegami przełajowymi, górskimi i na orientację czy wspinaczką. Jest fanem krytycznego i racjonalnego patrzenia na rzeczywistość i stosowania metody naukowej w każdej dziedzinie życia. Zarówno wykształcenie, jak i doświadczenie akademickie i dydaktyczne, sprawiają że jest on wszechstronnie przygotowany do prowadzenia interdyscyplinarnych zajęć projektowych.
+Starsza grupa prowadzona jest przez <b>Borysa Bińkowskiego</b>, doktora geografii Uniwersytetu Wrocławskiego i absolwenta Międzywydziałowych Studiów Matematyczno-Przyrodniczych na Uniwersytecie Warszawskim. Od lat prowadzi zajęcia z różnych zagadnień (prahistoria, ekonomia, geografia świata, zajęcia z biegów na orientację, warsztaty gitarowe i wiele innych) dla różnych grup wiekowych – od 8 do 80 lat. Od 2013 roku prowadzi również edukację domową dla dwóch swoich synów, aktywnie poznając nowoczesne i skuteczne metody edukacyjne. Pasjonuje się sportami związanymi z przyrodą – biegami przełajowymi, górskimi i na orientację, czy wspinaczką. Jest fanem krytycznego i racjonalnego patrzenia na rzeczywistość i stosowania metody naukowej w każdej dziedzinie życia. Zarówno wykształcenie, jak i doświadczenie akademickie i dydaktyczne, sprawiają że jest on wszechstronnie przygotowany do prowadzenia interdyscyplinarnych zajęć projektowych.
                     </p>
                 </Media.Body>
             </Media>
@@ -439,17 +440,16 @@ Starsza grupa prowadzona będzie przez <b>Borysa Bińkowskiego</b>, doktora geog
                 </Media.Left>
                 <Media.Body>
                     <p class="rowno">
-<b>Ewelina Mikołajczyk</b> będzie opiekunką młodszej grupy. Ukończyła ochronę środowiska i biologię na Uniwersytecie Wrocławskim oraz podyplomowe studia pedagogiczne. Ma doświadczenie w pracy zarówno z dziećmi jak i dorosłymi. Bliskie jej są pedagogika Montessorii oraz edukacja przygodowa. Płynie z nurtem porozumienia bez przemocy. Za priorytet uważa rozbudzanie ciekawości poznawczej i kreatywności dzieci. Prywatnie mama 2 chłopców i gromadki nietoperzy, fascynatka nauki, przyrody, miłośniczka gór, jaskiń i rowerów.
+<b>Ewelina Mikołajczyk</b> jest opiekunką młodszej grupy. Ukończyła Ochronę Środowiska i Biologię na Uniwersytecie Wrocławskim oraz podyplomowe Studia Pedagogiczne. Ma doświadczenie w pracy zarówno z dziećmi, jak i dorosłymi. Bliskie jej są pedagogika Montessorii oraz edukacja przygodowa. Płynie z nurtem porozumienia bez przemocy. Za priorytet uważa rozbudzanie ciekawości poznawczej i kreatywności dzieci. Prywatnie mama 2 chłopców, psa i gromadki nietoperzy, fascynatka nauki, przyrody, miłośniczka gór, jaskiń i rowerów.
                     </p>
                 </Media.Body>
             </Media>
             <Media>
                 <Media.Left>
-                    <img width={256} height={300} src="/img/zywiol-Magdalena_Sekalska.jpg" alt="Magdalena Sękalska"/>
                 </Media.Left>
                 <Media.Body>
                     <p class="rowno">
-<b>Magdalena Sękalska</b> - ciepła i sympatyczna osoba. W Żywiole będzie wspomagać młodszą grupę. Absolwentka studiów na kierunku pedagogika specjalna na Uniwersytecie Wrocławskim. Wciąż poszerza swoją wiedzę. Obserwacja rozwoju dzieci jest jej pasją, a kontakt z najmłodszymi źródłem radości. Posiada spore doświadczenie w opiece nad dziećmi. Bliskie jest jej poznanie wielozmysłowe i sensoplastyka. Jako dyplomowana animatorka zabaw dla dzieci prowadzi m.in. kreatywny kącik dla dzieci. Jej zainteresowania sięgają od Klubu Miłośników Starej Motoryzacji, po górskie szczyty.
+<b>Justyna Nowak</b> prowadzi grupę przedszkolną...
                     </p>
                 </Media.Body>
             </Media>
@@ -459,7 +459,7 @@ Starsza grupa prowadzona będzie przez <b>Borysa Bińkowskiego</b>, doktora geog
                 </Media.Left>
                 <Media.Body>
                     <p class="rowno">
-<b>Agata Kamińska</b>, która będzie u nas prowadzić zajęcia z Taekwondo, jest nie tylko specjalistą od sztuk walki, ale również od innych sztuk, w tym sztuki pracy z dziećmi. Jest świeżo upieczonym magistrem Arteterapii. Ukończyła studia pedagogiczne na kierunku Edukacja Wczesnoszkolna i Wychowanie Przedszkolne. Docenia sztukę tworzenia w każdym jej aspekcie, poczynając od twórczych zabaw w błocie, poprzez rysowanie muzyki, land art, na sztukach walki skończywszy. Jej największą pasją jest koreańska sztuka walki - Taekwondo. Współpracuje z Obornickim Klubem Taekwondo "Namu", gdzie oprócz poszerzania swojej własnej wiedzy, prowadzi zajęcia w grupie dzieci 3-6 lat. Swoje zamiłowanie do sportu przekłada na różne dziedziny. Na co dzień pracuje z dziećmi w wieku 3-4 lata w Przedszkolu Publicznym w Pęgowie.
+<b>Agata Kamińska</b> prowadzi zajęcia z Taekwondo. Jest nie tylko specjalistą od sztuk walki, ale również od innych sztuk, w tym sztuki pracy z dziećmi. Z wykształcenia jest magistrem Arteterapii. Ukończyła studia pedagogiczne na kierunku Edukacja Wczesnoszkolna i Wychowanie Przedszkolne. Docenia sztukę tworzenia w każdym jej aspekcie, poczynając od twórczych zabaw w błocie, poprzez rysowanie muzyki, land art, na sztukach walki skończywszy. Jej największą pasją jest koreańska sztuka walki - Taekwondo. Współpracuje z Obornickim Klubem Taekwondo "Namu", gdzie oprócz poszerzania swojej własnej wiedzy, prowadzi zajęcia w grupie dzieci 3-6 lat. Swoje zamiłowanie do sportu przekłada na różne dziedziny. Na co dzień pracuje z dziećmi w wieku 3-4 lata w Przedszkolu Publicznym w Pęgowie.
                     </p>
                 </Media.Body>
             </Media>
@@ -478,17 +478,33 @@ function Wyzywienie(props) {
             <h3>Wyżywienie</h3>
             <br/>
 <p>
-Dbamy o to aby posiłki spożywane w szkole były pełnowartościowe, sezonowe, w miarę możliwości ekologiczne.
+Dbamy o to, aby posiłki spożywane w szkole były pełnowartościowe, sezonowe i w miarę możliwości ekologiczne.
 </p>
 <p>
-Zapewniamy możliwość wykupienia obiadów, oraz czas na spożycie śniadań i podwieczorków przyniesionych z domu.
+Zapewniamy możliwość wykupienia obiadów, które dowozić nam będzie firma cateringowa.
 </p>
 <p>
-W dni, które sami nie będziemy gotować, odwiedzać będziemy słynną <a href="https://pl-pl.facebook.com/DeguStacjaObornikiSlaskie/">Degustację</a>, gdzie czekać będzie specjalnie przygotowane dla nas danie. 
+Wspólnie spożywamy przyniesione z domu śniadania i podwieczorki.
 </p>
 <p>
-Kuchnię uważamy za fascynujące laboratorium, a czas posiłków jest idealny na nowe doznania, naukę i rozwój socjalny. Dlatego z radością chcemy zaoferować dzieciom warsztaty kulinarne.
+Kuchnię uważamy za fascynujące laboratorium, a czas posiłków jest idealny na nowe doznania, naukę i rozwój socjalny. Dlatego oferujemy dzieciom warsztaty kulinarne,
+podczas których przygotujemy potrawy z różnych stron świata. Pomagają nam w tym nasi zagraniczni wolontariusze, którzy często u nas goszczą.
 </p>
+            <br/>
+            <br/>
+        </div>
+    );
+}
+
+//-------------------------------------------------------------------------------
+
+function Przedszkole(props) {
+    return (
+        <div>
+            <h3>Przedszkole</h3>
+            <br/>
+            <br/>
+            <br/>
         </div>
     );
 }
@@ -514,6 +530,9 @@ function InspiracjeKsiazki(props) {
         <li><cite>"Odkrycie dziecka"</cite> <a href="https://pl.wikipedia.org/wiki/Maria_Montessori">Maria Montessori</a> (ISBN: 978-83-935122-9-4)</li>
     </ul>
 </p>
+            <br/>
+            <br/>
+            <br/>
         </div>
     );
 }
@@ -567,65 +586,76 @@ function FAQ(props) {
     return (
       <div>
         <Accordion>
-            <Panel header="Czy to będzie prawdziwa szkoła?" eventKey="1">
+            <Panel header="Czy to jest prawdziwa szkoła?" eventKey="1">
 <p>
     I tak, i nie. Żywioł formalnie nie jest szkołą, nie pobiera pieniędzy z subwencji, a dzieci do nas zapisane wypełniają tzw. obowiązek szkolny poza szkołą.
     Oznacza to, że formalnie dzieci muszą być zapisane do szkoły macierzystej, z którą współpracujemy. My jesteśmy odpowiedzialni za opiekę i zajęcia edukacyjne,
     natomiast szkoła macierzysta jest zobowiązana do przeprowadzenia raz do roku egzaminu, oraz do wydawania świadectw.
-    Egzamin ma na celu sprawdzenie wypełnienia podstawy programowej. Egzamin będzie przeprowadzony w naszym budynku, będzie miał możliwie swobodną formę,
-    a egzaminatorzy będą znani dzieciom z zajęć wyjazdowych odbywających się w szkole macierzystej.
+    Egzamin ma na celu sprawdzenie wypełnienia podstawy programowej.
 </p>
 <p>
-    Z drugiej strony, w przeciwieństwie do większości szkół, nie będzie u nas ławek, dzwonków, ocen, klasówek, prac domowych i odpytywania.
-    Będziemy pracować na powietrzu, często gdzieś wyjeżdżać, ruszać się nawet w czasie prac czysto intelektualnych.
-    W porozumieniu z rodzicami i dziećmi możemy nawet dowolnie manipulować dniami wolnymi przesuwając np. czas wakacji.
-</p>
-<p>
-    Jednocześnie dążymy do tego aby spełnić wymogi finansowania ministerialnego i stać się szkołą w pełnym tego słowa znaczeniu, nie zmieniając formy pracy.
+    Z drugiej strony, w przeciwieństwie do większości szkół, nie ma u nas ławek, dzwonków, ocen, klasówek, prac domowych i odpytywania.
+    Pracujemy na świeżym powietrzu, chodzimy na spacery, wyjeżdżamy w góry, śpimy w namiotach, odwiedzamy sale koncertowe i muzea.
+    Dajemy dzieciom dużo czasu na swobodne zabawy, do których sami chętnie dołączamy. Zajęcia są interdyscyplinarne, łączymy wiele przedmiotów i pokazujemy
+    wykorzystanie wiedzy w praktyce. W porozumieniu z rodzicami i dziećmi możemy nawet dowolnie manipulować dniami wolnymi przesuwając np. czas ferii lub wakacji.
 </p>
             </Panel>
-            <Panel header="Kto będzie ponosił odpowiedzialność za dzieci?" eventKey="2">
+            <Panel header="Kto ponosi odpowiedzialność za dzieci?" eventKey="2">
 <p>
-    Odpowiedzialność za dzieci ponosić będzie szkoła, która zabezpieczona jest odpowiednim ubezpieczeniem.
-    Ważniejsze od odpowiedzialności prawnej jest dla nas bezpieczeństwo dzieci, w tym rzeczy, których nie da się ubezpieczyć,
-    takie jak swoboda wypowiedzi, wolność od destruktywnego oceniania, czy prosty kręgosłup.
+    Za postępy w nauce odpowiedzialne jest wyłącznie dziecko. My - nauczyciele i rodzice mamy obowiązek je w tym procesie wspomagać.
+    Podobnie jest z odpowiedzialnością za bezpieczeństwo. Dziecko samodzielnie decyduje
+    na jaką wysokość może wejść na drzewo. Nauczyciele pozostawiają dzieciom swobodę i
+    wolność, udostępniają narzędzia, którymi można się skaleczyć. Dzięki temu dziecko
+    szybciej zaczyna za siebie decydować, staje się samodzielne i sprawne manualnie.
+    Oczywiście nauczyciele, zgodnie ze swoją wiedzą, doświadczeniem i znajomością dzieci,
+    ograniczają im swobodę w pewnym zakresie, gdy może to poważnie grozić
+    bezpieczeństwu poszczególnych dzieci. Pozostawiamy jednak dużo swobody, zakładając,
+    że warto zaryzykować wspinaczkę na drzewo, żeby mieć prosty kręgosłup i nauczyć się
+    samodzielnego dbania o własne bezpieczeństwo.
+    Zrozumienie naszego podejścia do bezpieczeństwa jest bardzo ważne, dlatego też
+    zapraszamy rodziców na warsztaty wprowadzające i wymagamy podpisania specjalnej
+    zgody (patrz pliki do pobrania).
 </p>
 
             </Panel>
-            <Panel header="Czy rodzice będą musieli po szkole przygotowywać dzieci do egzaminów?" eventKey="3">
+            <Panel header="Czy rodzice muszą po szkole przygotowywać dzieci do egzaminów?" eventKey="3">
 <p>
-    Nie, zajmuje się tym szkoła. Raz w roku dzieci będą zdawały egzamin ze zdobytej wiedzy (nie obowiązuje to zerówek).
-    Będzie to jedyna „klasówka”, która będzie obowiązywać w ciągu roku. We współpracy ze szkołą macierzystą, egzamin będzie odbywał się w
-    Żywiole i będzie miał formę możliwie swobodną, tak żeby poznać faktyczne umiejętności i wiedzę, bez filtra stresu.
+    Nie - zajmuje się tym szkoła. Raz w roku dzieci zdają egzamin ze zdobytej wiedzy
+    i jest to jedyna „klasówka” (nie obowiązuje to zerówek).
+    Dzieci z klas 1-3 zdają jeden egzamin. Dzieci z klasy 4 zdają: język polski,
+    język angielski, przyrodę, matematykę, historię, informatykę. Dzieci z klasy 5 i 6 zdają:
+    język polski, język angielski, biologię, geografię, matematykę, historię, informatykę.
+    Jednocześnie zachęcamy rodziców, aby wspierali nas w procesie edukacyjnym. Proponujemy
+    indywidualną pracę z dzieckiem w niewielkim zakresie: np. wspólne czytanie do poduszki.
 </p>
             </Panel>
             <Panel header="Czy rodzic musi być wolontariuszem nawet jak nie ma czasu lub nie potrafi?" eventKey="4">
 <p>
     Rodzic może, ale nie musi angażować się aktywnie w życie szkoły. Dajemy możliwość zamiany części czesnego na pracę np. w formie opiekuna wspierającego.
-    Co prawda oczekujemy od rodziców stałej współpracy dla dobra ich dzieci, ale do większego zaangażowania zachęcamy tylko tych, którzy czują się na siłach i mają na to czas.
+    Oczekujemy od rodziców stałej współpracy dla dobra ich dzieci, ale do większego zaangażowania zachęcamy tylko tych, którzy czują się na siłach i mają na to czas.
 </p>
             </Panel>
-            <Panel header="Czy szkoła będzie promowała którąś z religii?" eventKey="5">
+            <Panel header="Czy szkoła promuje którąś z religii?" eventKey="5">
 <p>
-    Szkoła będzie miejscem świeckim. W planie zajęć nie znajduje się religia. Jednocześnie będziemy promowali szacunek i tolerancję wobec wszystkich ludzi,
+    Szkoła jest miejscem świeckim. W planie zajęć nie znajduje się religia. Jednocześnie promujemy szacunek i tolerancję wobec wszystkich ludzi,
     niezależnie od ich przekonań religijnych.
 </p>
             </Panel>
-            <Panel header="Czy będziemy promować wegetarianizm i weganizm?" eventKey="6">
+            <Panel header="Czy szkoła promuje wegetarianizm i weganizm?" eventKey="6">
 <p>
-    Dzieci będą miały zapewnioną możliwość wykupienia pełnowartościowych obiadów. Jesteśmy otwarci na możliwość dostosowania się do konkretnej diety,
+    Dzieci mają zapewnioną możliwość wykupienia pełnowartościowych obiadów. Jesteśmy otwarci na możliwość dostosowania się do konkretnej diety,
     czy to związanej z poglądami, czy np. alergiami pokarmowymi.
 </p>
             </Panel>
-            <Panel header="Czy starsze dzieci nie stracą mając zajęcia razem z młodszymi?" eventKey="7">
+            <Panel header="Czy starsze dzieci nie tracą na tym, że mają zajęcia razem z młodszymi?" eventKey="7">
 <p>
-    Chcemy, aby rozwój dzieci prowadzony był bardzo indywidualnie. Aby możliwe było wsparcie nauczyciela dla każdego ucznia w wystarczającym stopniu
-    zajęcia dydaktyczne prowadzić będziemy w niewielkich grupach (max. 14 osób). Sprzyja temu też zawsze obecny drugi opiekun – wolontariusz anglojęzyczny, lub rodzic.
-    Tworzymy 2 grupy wiekowe, jednak rzeczywisty podział w trakcie różnych zajęć będzie dostosowany do umiejętności i zainteresowań dzieci.
+    Dbamy o to, aby rozwój dzieci prowadzony był bardzo indywidualnie. Aby możliwe było wsparcie nauczyciela dla każdego ucznia w wystarczającym stopniu
+    zajęcia dydaktyczne prowadzimy w niewielkich grupach (max. 14 osób). Sprzyja temu też zawsze obecny drugi opiekun – wolontariusz anglojęzyczny, lub rodzic.
+    Tworzymy 2 grupy wiekowe, jednak rzeczywisty podział w trakcie różnych zajęć dostosowany jest do umiejętności i zainteresowań dzieci.
     Jednocześnie starsze (lub biegłe w jakimś temacie) dzieci mogą stać się nauczycielami młodszych, co, jak dowodzą badania poświęcone procesom nauczania, sprzyja zarówno jednym jak i drugim.
 </p>
             </Panel>
-            <Panel header="Czy przyjmujecie dzieci z niepełnosprawnością?" eventKey="8">
+            <Panel header="Czy przyjmujemy dzieci z niepełnosprawnością?" eventKey="8">
 <p>
     Nie dzielimy ludzi na pełno i niepełnosprawnych. Każdy jest inny. I choć nie mamy przystosowań w tym kierunku jesteśmy otwarci na zmiany.
     Dla dzieci kontakt z różnymi ludźmi, również tymi, którym trzeba poświęcić więcej uwagi i cierpliwości, jest cennym doświadczeniem,
@@ -634,22 +664,17 @@ function FAQ(props) {
             </Panel>
             <Panel header="Czy dni wyjazdowe są dodatkowo płatne?" eventKey="9">
 <p>
-    Czy planowane są wyjazdy, które mogą generować dodatkowe wysokie koszty np. wyjazd do Warszawy, czy choćby wrocławskiego ZOO, będą uzgadnianie z rodzicami lub zaplanowane z góry,
-    czy to będzie zależne od pomysłów i potrzeb dzieci?
-</p>
-<p>
-    W czasie wyjazdów bezpłatna będzie opieka i dydaktyka dzieci. Osobno płatne będą koszty dodatkowe, czyli wynajęcie autobusu, czy bilety wstępu.
-    Część dni wyjazdowych planujemy prowadzić w bezpośredniej okolicy i będą one zakładać np. rowerową wyprawę po okolicy i wówczas
-    całe przedsięwzięcie będzie bezpłatne. Planowane koszty dodatkowe nie powinny przewyższyć 80 zł miesięcznie i zależeć będą w dużej mierze od uzgodnień z rodzicami.
-    W praktyce oznacza to, że jeśli będziemy chcieli zachęcić rodziców do udziału ich dzieci w fantastycznym, lecz drogim przedsięwzięciu,
-    zawsze wcześniej zapytamy ich o zdanie. Koszty wyjazdów mogą być znacznie zmniejszone dzięki naszej współpracy ze szkołą macierzystą.
-    Oznacza to, że dla dzieci zapisanych do polecanej szkoły macierzystej koszt udziału w niektórych wydarzeniach będzie bezpłatny.
+    W czasie wyjazdów opieka i dydaktyka dzieci są bezpłatne. Osobno płatne są koszty dodatkowe, czyli wynajęcie autobusu, czy bilety wstępu.
+    Część dni wyjazdowych prowadzimy w bezpośredniej okolicy i zakładają one np. rowerową wyprawę po okolicy i wówczas
+    całe przedsięwzięcie jest bezpłatne. Planowane koszty dodatkowe zwykle nie przewyższają 80 zł miesięcznie i zależą w dużej mierze od uzgodnień z rodzicami.
+    Koszty wyjazdów mogą być znacznie zmniejszone dzięki naszej współpracy ze szkołą macierzystą.
+    Oznacza to, że dla dzieci zapisanych do polecanej szkoły macierzystej koszt udziału w niektórych wydarzeniach jest bezpłatny.
 </p>
             </Panel>
             <Panel header="Żywioł i co dalej?" eventKey="10">
 <p>
-    Żywioł w pierwszym roku obejmuje dzieci od 0 do 5 klasy. Mamy jednak zamiar umożliwić naszym uczniom kontynuowanie u nas nauki na całym etapie kształcenia podstawowego.
-    Będziemy rozwijać się wraz z dziećmi. Nasi absolwenci będą otrzymywali świadectwa uprawniające do kontynuacji nauki na poziomie szkoły średniej, w naszej lub innej placówce.
+    Umożliwiamy naszym uczniom kontynuowanie u nas nauki na całym etapie kształcenia podstawowego.
+    Rozwijamy się wraz z dziećmi. Nasi absolwenci otrzymują świadectwa uprawniające do kontynuacji nauki na poziomie szkoły średniej, w naszej lub innej placówce.
 </p>
             </Panel>
             <Panel header="Czy uczeń zmuszony do zmiany szkoły da sobie radę w tradycyjnej szkole?" eventKey="11">
@@ -662,11 +687,18 @@ function FAQ(props) {
             </Panel>
             <Panel header="Co jeśli dziecko nie zda egzaminu?" eventKey="12">
 <p>
-    Żywioł bazuje na indywidualnym podejściu i pobudzaniu wewnętrznej motywacji ucznia. Dzieci są ciekawe świata i chętnie się uczą.
-    Przyswajają nowości z pasją o ile nie zniszczy jej przymus i ocenianie. Z perspektywy dorosłego człowieka mniej ważne jest to w jakim wieku zaczęliśmy
-    czytać, czy opanowaliśmy tabliczkę mnożenia, niż to, czy ktoś potrafił pobudzić w nas pasję. Jesteśmy jednak zobligowani do wypełniania podstawy programowej.
-    Rolą nauczyciela jest podanie materiału w sposób interesujący dla dziecka. I jest to absolutnie możliwe. Egzamin jest więc sprawdzianem bardziej nauczyciela niż ucznia.
-    Nauczyciel ma możliwość dostosowania materiału do potrzeb i zainteresowań ucznia, a forma egzaminu będzie swobodna, daleka od stresu i zostanie dobrana z uwagą na potrzeby i możliwości dzieci.
+    Nasza szkoła istnieje od 2017 roku. Dotychczas wszyscy nasi uczniowie zdali egzaminy końcowe. Wiemy z doświadczeń innych bliźniaczych szkół, że dla dzieci, które nie mają
+    poważnych dysfunkcji rozwojowych, egzamin nie jest problemem. Warto tu zaznaczyć, że jak najlepsza ocena uzyskana z egzaminu nie jest celem do którego zmierzamy
+    i uważamy, że nie jest ona wyznacznikiem kompetencji i poziomu wiedzy ucznia.
+</p>
+<p>
+    Bazujemy na indywidualnym podejściu i pobudzaniu wewnętrznej motywacji ucznia.
+    Dzieci są ciekawe świata i chętnie się uczą. Przyswajają nowości z wielką pasją o ile nie zniszczy
+    jej przymus i ocenianie. Z perspektywy dorosłego człowieka mniej ważne jest to w jakim
+    wieku zaczęliśmy czytać, czy opanowaliśmy tabliczkę mnożenia, niż to, czy ktoś potrafił
+    pobudzić w nas pasję. Jesteśmy jednak zobligowani do wypełniania podstawy programowej. Rolą nauczyciela
+    jest podanie materiału w sposób interesujący dla dziecka i jest to absolutnie możliwe.
+    Nauczyciel ma możliwość dostosowania materiału do potrzeb i zainteresowań ucznia, tak, aby zdanie egzaminu nie stanowiło problemu.
 </p>
             </Panel>
         </Accordion>
@@ -676,6 +708,9 @@ function FAQ(props) {
         <div>
             <span>Jeśli odpowiedzi nie są dla Ciebie wyczerpujące, zapraszamy do kontaktu.</span>
         </div>
+        <br/>
+        <br/>
+        <br/>
       </div>
     );
 }
@@ -726,6 +761,7 @@ const mainMenu =
             <MenuItem eventKey="szkola.zespol">Nasz zespół</MenuItem>
             <MenuItem eventKey="szkola.wyzywienie">Wyżywienie</MenuItem>
           </NavDropdown>
+          <NavItem title="Przedszkole" eventKey="przedszkole">Przedszkole</NavItem>
           <NavDropdown eventKey="inspiracje" title="Inspiracje">
             <MenuItem eventKey="inspiracje.ksiazki">Książki</MenuItem>
             <MenuItem eventKey="inspiracje.linki">Linki</MenuItem>
@@ -774,6 +810,9 @@ const mainMenu =
           <Tab.Pane eventKey="szkola.wyzywienie">
             <br/><Wyzywienie/>
           </Tab.Pane>
+          <Tab.Pane eventKey="przedszkole">
+            <br/><Przedszkole/>
+          </Tab.Pane>
           <Tab.Pane eventKey="inspiracje.ksiazki">
             <br/><InspiracjeKsiazki/>
           </Tab.Pane>
@@ -798,7 +837,7 @@ class App extends Component {
         <br/>
         <Grid>
           <Row>
-            <Col sm={6} md={3}><Image src="/img/zywiol_logo.png" responsive/></Col>
+            <Col sm={6} md={3}><Image src="/img/zywiol-logo.png" responsive/></Col>
             <Col md={3} xsOffset={4}><SocialProfiles/></Col>
           </Row>
           <Row>
