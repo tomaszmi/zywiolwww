@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Tab, Image, Row, Col, Grid, Nav, NavItem, NavDropdown, MenuItem, Panel, Accordion, Well, Table, Media, Thumbnail} from 'react-bootstrap';
+import { Tab, Image, Row, Col, Grid, Nav, NavItem, NavDropdown, MenuItem, Panel, Accordion, Well, Table, Media} from 'react-bootstrap';
 import ReactTooltip from 'react-tooltip'
 import { SocialIcon } from 'react-social-icons';
 //import ReactSVG from 'react-svg'
