@@ -515,6 +515,7 @@ function PrzedszkoleKoncepcja(props) {
                 Nasza placówka realizuje podstawę programową Ministerstwa Edukacji Narodowej, korzystając z elementów pedagogiki <a href="https://pl.wikipedia.org/wiki/Maria_Montessori">Marii Montessori</a>.
                 Prowadzimy jedną grupę dzieci zróżnicowaną wiekowo od 2,5 do 5 lat, nad którą czuwa trzech wykwalifikowanych opiekunów oraz wolontariusze w tym osoby z zagranicy.
             </p>
+            <SocialIcon url="https://www.facebook.com/CzteryZywioly/"/>
             <br/>
             <br/>
             <br/>
