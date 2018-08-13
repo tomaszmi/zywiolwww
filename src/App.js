@@ -170,7 +170,7 @@ function Zapisy(props) {
         <div>
             <h3>Zapisy</h3>
 <p>
-Obecnie prowadzimy nabór do klas 0-6 oraz do przedszkola.
+Obecnie prowadzimy nabór do klas 0-6 oraz do <a href="https://www.facebook.com/CzteryZywioly/">"Leśnego Przedszkola"</a>.
 </p>
 <p>
 Przyjmujemy także zapisy na zajęcia całodniowe oraz popołudniowe (poszkolne).
@@ -257,7 +257,8 @@ function Downloads(props) {
             <h3>Pliki do pobrania</h3>
             <ul>
                 <li><p><a href="/docs/zywiol-informacje_o_dziecku.pdf">Informacje o dziecku</a></p></li>
-                <li><p><a href="/docs/zywiol-regulamin.pdf">Regulamin Autorskiej Szkoły <b>Żywioł</b></a></p></li>
+                <li><p><a href="/docs/zywiol-regulamin_szkolny.pdf">Regulamin Autorskiej Szkoły <b>Żywioł</b></a></p></li>
+                <li><p><a href="/docs/zywiol-regulamin_przedszkolny.pdf">Regulamin Leśnego Przedszkola <b>Cztery Żywioły</b></a></p></li>
                 <li><p><a href="/docs/fundacja_drzewo-statut.pdf">Statut Fundacji <b>Drzewo</b></a></p></li>
                 <li><p><a href="/docs/fundacja_drzewo-KRS.pdf">Fundacja <b>Drzewo</b> - KRS, wyciąg z sądu</a></p></li>
             </ul>
@@ -426,16 +427,6 @@ function Zespol(props) {
             <br/>
             <Media>
                 <Media.Left>
-                    <img width={256} height={256} src="/img/zywiol-Borys_Binkowski.jpg" alt="Borys Bińkowski"/>
-                </Media.Left>
-                <Media.Body>
-                    <p>
-Starsza grupa prowadzona jest przez <b>Borysa Bińkowskiego</b>, doktora geografii Uniwersytetu Wrocławskiego i absolwenta Międzywydziałowych Studiów Matematyczno-Przyrodniczych na Uniwersytecie Warszawskim. Od lat prowadzi zajęcia z różnych zagadnień (prahistoria, ekonomia, geografia świata, zajęcia z biegów na orientację, warsztaty gitarowe i wiele innych) dla różnych grup wiekowych – od 8 do 80 lat. Od 2013 roku prowadzi również edukację domową dla dwóch swoich synów, aktywnie poznając nowoczesne i skuteczne metody edukacyjne. Pasjonuje się sportami związanymi z przyrodą – biegami przełajowymi, górskimi i na orientację, czy wspinaczką. Jest fanem krytycznego i racjonalnego patrzenia na rzeczywistość i stosowania metody naukowej w każdej dziedzinie życia. Zarówno wykształcenie, jak i doświadczenie akademickie i dydaktyczne, sprawiają że jest on wszechstronnie przygotowany do prowadzenia interdyscyplinarnych zajęć projektowych.
-                    </p>
-                </Media.Body>
-            </Media>
-            <Media>
-                <Media.Left>
                     <img width={256} height={180} src="/img/zywiol-Ewelina_Mikolajczyk.jpg" alt="Ewelina Mikołajczyk"/>
                 </Media.Left>
                 <Media.Body>
@@ -498,10 +489,90 @@ podczas których przygotujemy potrawy z różnych stron świata. Pomagają nam w
 
 //-------------------------------------------------------------------------------
 
-function Przedszkole(props) {
+function PrzedszkoleKoncepcja(props) {
     return (
         <div>
-            <h3>Przedszkole</h3>
+            <h3>Koncepcja</h3>
+            <p>
+                "Leśne Przedszkole Cztery Żywioły" jest kolejną inicjatywą Fundacji Drzewo, do założenia którego zainspirowały nas obserwacje i przekonania na temat współczesnych wymiarów dzieciństwa. 
+                Obecnie dzieci spędzają większość wolnego czasu w zamkniętych pomieszczeniach, zamiast na świeżym powietrzu w wyniku czego posiadają
+                małą odporność na choroby, problemy z koncentracją, alergie, zaburzenia percepcji zmysłowej mogące wynikać ze znacznego deficytu kontaktów z przyrodą w codziennym życiu dziecka.
+                Bardzo istotnym aspektem dla rozwoju sprawności ruchowych dzieci w wieku przedszkolnym jest to, aby miały stworzone warunki do wszechstronnego ruchu. 
+                Wspinanie się, skakanie, balansowanie, bieganie przez cały dzień są niezastąpione.
+                Czas spędzany na świeżym powietrzu zachęca do kreatywnej zabawy korzystając z zasobów przyrody.
+            </p>
+            <p>
+                Nasze przedszkole to miejsce, gdzie bez względu na pogodę większość czasu spędzamy na świeżym powietrzu, w otoczeniu przyrody, która umożliwia dzieciom naukę przez odkrywanie i doświadczanie otaczającego nas świata. 
+                Dzieci obcując z przyrodą dostają nieograniczone możliwości rozwijania wszelkich zmysłów. Czas w przedszkolu sprzyja uruchamianiu wyobraźni, fascynacji, twórczości a także rozwijaniu samodzielności.
+                Poprzez wielogodzinny kontakt z przyrodą, dziecko doświadcza całego bogactwa dźwięków i odgłosów, faktur i zapachów.
+            </p>
+            <p>
+                Dla nas, jako nauczycieli, wychowawców i wolontariuszy najważniejszym zadaniem jest uważna obserwacja dzieci, oraz wspieranie ich i asystowanie w codzienności.
+                Nasza rola polega na dyskretnym towarzyszeniu, a nie przewodzeniu. Wierzymy, że takie podejście pomaga uzyskać przez dzieci ogrom poczucia wiary we własne siły
+                i możliwości przez podejmowanie wyzwań i ćwiczenie samodzielności. Chcemy uwzględniać indywidualne cechy, zainteresowania i zamiłowania dzieci a także unikać ocen na rzecz aktywnego wspierania holistycznego rozwoju.
+            </p>
+            <p>
+                Nasza placówka realizuje podstawę programową Ministerstwa Edukacji Narodowej, korzystając z elementów pedagogiki <a href="https://pl.wikipedia.org/wiki/Maria_Montessori">Marii Montessori</a>.
+                Prowadzimy jedną grupę dzieci zróżnicowaną wiekowo od 2,5 do 5 lat, nad którą czuwa trzech wykwalifikowanych opiekunów oraz wolontariusze w tym osoby z zagranicy.
+            </p>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    );
+}
+
+function PrzedszkolePlanDnia(props) {
+    return (
+        <div>
+            <h3>Plan Dnia</h3>
+            <p>
+                "Leśne Przedszkole Cztery Żywioły" działa od poniedziałku do piątku w godzinach od 7:00 do 17:00.
+            </p>
+            <p>
+                <Table striped condensed hover>
+                    <tbody>
+                        <tr>
+                            <td>7:00 - 9:00</td>
+                            <td>Przyprowadzanie dzieci do przedszkola, czas spędzany przez dzieci w dowolny sposób (około 8.30 śniadanie)</td>
+                        </tr>
+                        <tr>
+                            <td>9:00 - 10:45</td>
+                            <td>Praca programowa oraz drugie śniadanie</td>
+                        </tr>
+                        <tr>
+                            <td>10.45 – 11.00</td>
+                            <td>Przygotowanie do wyprawy</td>
+                        </tr>
+                        <tr>
+                            <td>11.00 – 13.00</td>
+                            <td>Wyprawa</td>
+                        </tr>
+                        <tr>
+                            <td>13.00 – 14.30</td>
+                            <td>Obiad i poobiedni odpoczynek</td>
+                        </tr>
+                        <tr>
+                            <td>14.00 – 17.00</td>
+                            <td>Zabawa na zewnątrz na terenie przedszkola</td>
+                        </tr>
+                    </tbody>
+                </Table>
+            </p>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+    );
+}
+
+function PrzedszkoleWyzywienie(props) {
+    return (
+        <div>
+            <h3>Wyżywienie</h3>
+            <p>
+                Obiady dostarczane są przez firmę cateringową, natomiast pozostałe zdrowe posiłki przygotowują swoim dzieciom rodzice.
+            </p>
             <br/>
             <br/>
             <br/>
@@ -761,7 +832,11 @@ const mainMenu =
             <MenuItem eventKey="szkola.zespol">Nasz zespół</MenuItem>
             <MenuItem eventKey="szkola.wyzywienie">Wyżywienie</MenuItem>
           </NavDropdown>
-          <NavItem title="Przedszkole" eventKey="przedszkole">Przedszkole</NavItem>
+          <NavDropdown eventKey="przedszkole" title="Leśne Przedszkole">
+            <MenuItem eventKey="przedszkole.koncepcja">Koncepcja</MenuItem>
+            <MenuItem eventKey="przedszkole.dzien">Plan dnia</MenuItem>
+            <MenuItem eventKey="przedszkole.wyzywienie">Wyżywienie</MenuItem>
+          </NavDropdown>
           <NavDropdown eventKey="inspiracje" title="Inspiracje">
             <MenuItem eventKey="inspiracje.ksiazki">Książki</MenuItem>
             <MenuItem eventKey="inspiracje.linki">Linki</MenuItem>
@@ -810,8 +885,14 @@ const mainMenu =
           <Tab.Pane eventKey="szkola.wyzywienie">
             <br/><Wyzywienie/>
           </Tab.Pane>
-          <Tab.Pane eventKey="przedszkole">
-            <br/><Przedszkole/>
+          <Tab.Pane eventKey="przedszkole.koncepcja">
+            <br/><PrzedszkoleKoncepcja/>
+          </Tab.Pane>
+          <Tab.Pane eventKey="przedszkole.dzien">
+            <br/><PrzedszkolePlanDnia/>
+          </Tab.Pane>
+          <Tab.Pane eventKey="przedszkole.wyzywienie">
+            <br/><PrzedszkoleWyzywienie/>
           </Tab.Pane>
           <Tab.Pane eventKey="inspiracje.ksiazki">
             <br/><InspiracjeKsiazki/>
