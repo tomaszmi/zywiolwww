@@ -28,7 +28,9 @@ const LinkNames = [
 
 function SocialProfiles(props) {
     return (
-        <SocialIcon url="https://www.facebook.com/zywiol.obornikislaskie/"/>
+        <div>
+            <SocialIcon url="https://www.facebook.com/zywiol.obornikislaskie/"/>
+        </div>
     )
 }
 
@@ -208,7 +210,7 @@ function Cennik(props) {
                     </tr>
                     <tr>
                         <td>500 zł/miesiąc</td>
-                        <td>Czesne dla dzieci uczęszczających na zajęcia popołudniowe, tj. od godziny 13:00</td>
+                        <td>Czesne dla dzieci uczęszczających na zajęcia popołudniowe, tj. w godzinach 13:00-17:00</td>
                     </tr>
                     <tr>
                         <td>500 zł</td>
@@ -302,6 +304,12 @@ function Aktualnosci(props) {
             <h3>Aktualności</h3>
 <p>
     Zapraszamy do zapoznania się z ubiegłymi i nadchodzącymi wydarzeniami na naszym profilu Facebook: <br/><a href="https://pl-pl.facebook.com/zywiol.obornikislaskie/">https://pl-pl.facebook.com/zywiol.obornikislaskie/</a>
+</p>
+<p>
+    <b><a href="/img/zywiol-sielsko_jak_nigdy_egzotycznie_jak_zawsze_skan.jpg">Żywioł. Sielsko jak nigdy, egzotycznie jak zawsze!</a></b> - przeczytaj artykuł o naszej szkole opublikowany w gazecie Nowa.
+</p>
+<p>
+    <b><a href="http://www.oborniki-slaskie.pl/sites/default/files/pliki/zpr_maj2018_l_0.pdf">Międzynarodowo w Żywiole</a></b> - artukuł opublikowany w magazynie informacyjnym Urzedu Miejskiego w Obornikiach Śląskich (strona 11).
 </p>
 <p>
     <b><a href="http://nowagazeta.pl/2017/07/zywiol-szkola-bez-lawek/">Żywioł - szkoła bez ławek</a></b> - przeczytaj artykuł o naszej szkole opublikowany w gazecie Nowa.
@@ -437,20 +445,81 @@ function Zespol(props) {
             </Media>
             <Media>
                 <Media.Left>
+                    <img width={256} height={256} src="/img/zywiol-no_image.png" alt="Małgorzata Podróżna"/>
                 </Media.Left>
                 <Media.Body>
                     <p class="rowno">
-<b>Justyna Nowak</b> prowadzi grupę przedszkolną...
+<b>Małgorzata Podróżna</b>
                     </p>
                 </Media.Body>
             </Media>
             <Media>
                 <Media.Left>
-                    <img width={256} height={300} src="/img/zywiol-Agata_Kaminska.jpg" alt="Agata Kamińska"/>
+                    <img width={256} height={170} src="/img/zywiol-Sylwia_Pietrzak.jpg" alt="Sylwia Pietrzak"/>
                 </Media.Left>
                 <Media.Body>
                     <p class="rowno">
-<b>Agata Kamińska</b> prowadzi zajęcia z Taekwondo. Jest nie tylko specjalistą od sztuk walki, ale również od innych sztuk, w tym sztuki pracy z dziećmi. Z wykształcenia jest magistrem Arteterapii. Ukończyła studia pedagogiczne na kierunku Edukacja Wczesnoszkolna i Wychowanie Przedszkolne. Docenia sztukę tworzenia w każdym jej aspekcie, poczynając od twórczych zabaw w błocie, poprzez rysowanie muzyki, land art, na sztukach walki skończywszy. Jej największą pasją jest koreańska sztuka walki - Taekwondo. Współpracuje z Obornickim Klubem Taekwondo "Namu", gdzie oprócz poszerzania swojej własnej wiedzy, prowadzi zajęcia w grupie dzieci 3-6 lat. Swoje zamiłowanie do sportu przekłada na różne dziedziny. Na co dzień pracuje z dziećmi w wieku 3-4 lata w Przedszkolu Publicznym w Pęgowie.
+<b>Sylwia Pietrzak</b>
+                    </p>
+                </Media.Body>
+            </Media>
+            <Media>
+                <Media.Left>
+                    <img width={256} height={256} src="/img/zywiol-no_image.png" alt="Justyna Nowak"/>
+                </Media.Left>
+                <Media.Body>
+                    <p class="rowno">
+<b>Justyna Nowak</b> prowadzi grupę przedszkolną.
+                    </p>
+                </Media.Body>
+            </Media>
+            <Media>
+                <Media.Left>
+                    <img width={256} height={256} src="/img/zywiol-no_image.png" alt="Małgorzata Rutkowska-Gorczyca"/>
+                </Media.Left>
+                <Media.Body>
+                    <p class="rowno">
+<b>Małgorzata Rutkowska-Gorczyca</b>
+                    </p>
+                </Media.Body>
+            </Media>
+            <Media>
+                <Media.Left>
+                    <img width={256} height={256} src="/img/zywiol-no_image.png" alt="Paweł Gorczyca"/>
+                </Media.Left>
+                <Media.Body>
+                    <p class="rowno">
+<b>Paweł Gorczyca</b>
+                    </p>
+                </Media.Body>
+            </Media>
+            <Media>
+                <Media.Left>
+                    <img width={256} height={256} src="/img/zywiol-Borys_Binkowski.jpg" alt="Borys Bińkowski"/>
+                </Media.Left>
+                <Media.Body>
+                    <p class="rowno">
+<b>Borys Bińkowski</b> doktor geografii, pasjonat nauk wszelkich, edukator, nauczyciel, zwolennik racjonalnego patrzenia na rzeczywistość. Specjalizuje się w naukach przyrodniczych i historii. W działaniach edukacyjnych z dziećmi stawia na interdyscyplinarność i metody projektowe. Aktywnie uczy się nowych metod pracy z dziećmi. Działa naukowo w przestrzeni na pograniczu psychologii, edukacji i neuronauk. Jego pasją jest bieganie po krzakach z kompasem w ręku. Lubi też muzykowanie, w czasie którego nie rozstaje się z gitarą. 
+                    </p>
+                </Media.Body>
+            </Media>
+            <Media>
+                <Media.Left>
+                    <img width={256} height={256} src="/img/zywiol-no_image.png" alt="Sebastian Magnowski"/>
+                </Media.Left>
+                <Media.Body>
+                    <p class="rowno">
+<b>Sebastian Magnowski</b>
+                    </p>
+                </Media.Body>
+            </Media>
+            <Media>
+                <Media.Left>
+                    <img width={256} height={256} src="/img/zywiol-Katarzyna_Rybotycka.jpg" alt="Kasia Rybotycka"/>
+                </Media.Left>
+                <Media.Body>
+                    <p class="rowno">
+<b>Kasia Rybotycka</b> pedagok specjalny, trener komunikacji bez przemocy (<a href="https://en.wikipedia.org/wiki/Nonviolent_Communication">NVC</a>), oraz wspomagajacej i alternatywnej komunikacji (<a href="https://pl.wikipedia.org/wiki/Alternatywne_i_wspomagaj%C4%85ce_metody_komunikacji">AAC</a>). Badaczka opinii społecznej, działaczka społeczna. Od ponad 10-ciu lat współpracuje z wrocławskimi fundacjami na rzecz tworzenia programów edukacyjnych, oraz wyrównywania szans w nauczaniu dzieci i młodzieży w szkołach państwowych i społecznych.
                     </p>
                 </Media.Body>
             </Media>
@@ -472,7 +541,7 @@ function Wyzywienie(props) {
 Dbamy o to, aby posiłki spożywane w szkole były pełnowartościowe, sezonowe i w miarę możliwości ekologiczne.
 </p>
 <p>
-Zapewniamy możliwość wykupienia obiadów, które dowozić nam będzie firma cateringowa.
+Zapewniamy możliwość wykupienia obiadów, które dowozi nam firma cateringowa.
 </p>
 <p>
 Wspólnie spożywamy przyniesione z domu śniadania i podwieczorki.
@@ -581,6 +650,22 @@ function PrzedszkoleWyzywienie(props) {
     );
 }
 
+function PrzedszkoleCennik(props) {
+    return (
+        <div>
+            <h3>Cennik</h3>
+            <Table striped condensed hover>
+                <tbody>
+                    <tr>
+                        <td>600 zł/miesiąc</td>
+                        <td>Czesne - dzieci uczęszczające w godzinach 7:00-17:00</td>
+                    </tr>
+                </tbody>
+            </Table>
+        </div>
+    );
+}
+
 //-------------------------------------------------------------------------------
 
 function InspiracjeKsiazki(props) {
@@ -647,6 +732,9 @@ REGON: 36794131000000<br/>
 Nr konta bankowego:<br/>
 Bank Zachodni WBK<br/>
 97 1090 2457 0000 0001 3492 5834 <br/>
+</p>
+<p>
+<a href="https://fsmm.pl/8659/centrum_edukacyjne_i_autorska_szkola_zywiol">Przekaż 1% podatku na KRS: 0000270261 z celem szczegółowym: Fundacja Drzewo 8659</a>.
 </p>
         </div>
     );
@@ -837,6 +925,7 @@ const mainMenu =
             <MenuItem eventKey="przedszkole.koncepcja">Koncepcja</MenuItem>
             <MenuItem eventKey="przedszkole.dzien">Plan dnia</MenuItem>
             <MenuItem eventKey="przedszkole.wyzywienie">Wyżywienie</MenuItem>
+            <MenuItem eventKey="przedszkole.cennik">Cennik</MenuItem>
           </NavDropdown>
           <NavDropdown eventKey="inspiracje" title="Inspiracje">
             <MenuItem eventKey="inspiracje.ksiazki">Książki</MenuItem>
@@ -894,6 +983,9 @@ const mainMenu =
           </Tab.Pane>
           <Tab.Pane eventKey="przedszkole.wyzywienie">
             <br/><PrzedszkoleWyzywienie/>
+          </Tab.Pane>
+            <Tab.Pane eventKey="przedszkole.cennik">
+            <br/><PrzedszkoleCennik/>
           </Tab.Pane>
           <Tab.Pane eventKey="inspiracje.ksiazki">
             <br/><InspiracjeKsiazki/>
